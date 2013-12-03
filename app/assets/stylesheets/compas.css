@@ -97,6 +97,8 @@ login page
     margin-top:20px;
 }
 
+#login #login_box .login_submit:hover { background-color:#0d95a3;}
+
 #login #login_box .sign_up {
     width:110px;
     height:40px;
@@ -107,6 +109,8 @@ login page
     margin-left:5px;
     margin-top:20px;
 }
+
+#login #login_box .sign_up:hover{background-color:#3EA055;}
 
 #login #login_box .facebook {color: #3B5998;}
 
@@ -187,6 +191,22 @@ events index
 
 #events_index h2 a { color:#0d95a3; }
 
+#events_index .event_image .overlay {
+    -webkit-transition: .3s;
+    transition:.3s;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:#fff;
+    opacity:0;
+    width:98%;
+    height:75%;
+}
+
+
+#events_index .event_image:hover .overlay {
+    opacity:.5;  }
+
 
 
 /*========================================================================================
@@ -216,6 +236,8 @@ event show
 #event_show .data form {float:left;}
 
 #event_show .data input {-webkit-appearance: none; border:none; background-color:#7dbac2; color:#fff;}
+
+#event_show .data input:hover {background-color: #0d95a3;}
 
 
 /*google maps*/
@@ -360,6 +382,9 @@ forms
     font-family:'Open Sans', sans-serif;
     margin-top:20px;
 }
+
+#form_submit:hover{background-color: #0d95a3;}
+#form_submit_org:hover{background-color: #0d95a3;}
 
 #form_submit_org {
     width:160px;
