@@ -65,9 +65,5 @@
 
 <% end %>
 
-
-<br />
-<% if org_owner? %>
-    <%= link_to 'New Event', new_event_path %>
-<% end %>
+<%= will_paginate @events %>
 </div>
