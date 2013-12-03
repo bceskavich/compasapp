@@ -25,7 +25,7 @@
       </div>
       <nav>
         <ul>
-          <li><%=link_to 'about', page_path('about')%></li>
+          <li><%=link_to 'about', page_path('about'), :class=> 'header_link'%></li>
           <li>\\</li>
           <li><%=link_to 'events', events_path, :class=> 'header_link' %></li>
           <li>\\</li>
@@ -33,7 +33,7 @@
           <li>\\</li>
           <% if session[:user_id] %>
               <% user = User.find(session[:user_id]) %>
-              <li><%= user.first_name %></li> <li>-</li>
+              <li><%= link_to user.first_name, user, :class=>'header_link' %></li> <li>-</li>
               <li><%= link_to 'logout', :controller => 'auth', :action => 'logout',:class=> 'header_link'  %></li>
           <% else %>
               <li><%= link_to 'login', :controller => 'auth', :action => 'login',:class=> 'header_link'  %></li>

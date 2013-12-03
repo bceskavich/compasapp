@@ -16,6 +16,10 @@
       </div>
     </div>
   </div>
+  <% if user_self? %>
+      <%= link_to 'Edit', edit_user_path(@user) %>  |
+      <%= link_to 'Delete Account', @user, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <% end %>
   <div class="row attended">
       <h2>Recently Attended</h2>
   </div>
@@ -28,15 +32,10 @@
             <%= image_tag current_event.image_url %>
         </div>
         <div class="row">
-          <h2><%= link_to current_event.name, current_event %></h2>
+          <h2><%= link_to current_event.name, current_event, :id => 'link' %></h2>
         </div>
       </div>
       <%end%>
 
 
-
-<% if user_self? %>
-    <%= link_to 'Edit', edit_user_path(@user) %>  |
-    <%= link_to 'Delete Account', @user, method: :delete, data: { confirm: 'Are you sure?' } %>
-<% end %>
 </div>

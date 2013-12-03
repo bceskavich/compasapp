@@ -1,4 +1,10 @@
 /*========================================================================================
+universal
+=========================================================================================== */
+
+#link:hover {background-color:#fff; text-decoration:underline;}
+
+/*========================================================================================
 header and nav
 =========================================================================================== */
 
@@ -181,6 +187,8 @@ events index
 
 #events_index h2 a { color:#0d95a3; }
 
+
+
 /*========================================================================================
 event show
 =========================================================================================== */
@@ -203,7 +211,7 @@ event show
 
 #event_show .event_image {max-height:450px; overflow:hidden; }
 
-#event_show .data { padding-left:5%; }
+#event_show .data { padding-left:5%;}
 
 #event_show .data form {float:left;}
 
@@ -391,3 +399,22 @@ about
 #about .image { overflow:hidden; max-height:210px; }
 
 #about .about {padding:2%;}
+
+/*========================================================================================
+attendees page
+========================================================================================== */
+
+#attending h1 {
+    margin-top:70px;
+    margin-bottom:30px;
+    margin-left:1%;
+    font-family: 'Open Sans', sans-serif;
+    font-size:2.7em;
+    font-weight:bold;;
+}
+
+#attending .attendee {float:left; padding-right:3%;}
+
+#attending .attendee .name {text-align:center; margin-top:5px; margin-bottom:25px;}
+
+#attending .attendee .name a {color: #0d95a3; }

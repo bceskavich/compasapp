@@ -26,7 +26,7 @@
             <%= image_tag current_event.image_url %>
           </div>
           <div class="row">
-            <h2><%= link_to current_event.name, current_event %></h2>
+            <h2><%= link_to current_event.name, current_event, :id => 'link' %></h2>
           </div>
           <div class="row">
             <%= current_event.time.in_time_zone.strftime("%l:%M%P") %> --  <%= current_event.date.strftime("%B %e, %Y") %>

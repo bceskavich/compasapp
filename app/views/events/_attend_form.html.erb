@@ -1,5 +1,25 @@
 <% if current_user.attending?(@event, current_user) %>
 	<%= render 'unattend' %>
+    <script>
+        $(function() {
+            $('input').one('click',function(){
+                console.log('clicked!');
+                var count = parseInt($('span').html())-1;
+                console.log(count);
+                $('span').html(count);
+            });
+        });
+    </script>
 <% else %>
 	<%= render 'attend' %>
+    <script>
+        $(function() {
+            $('input').one('click',function(){
+                console.log('clicked!');
+                var count = parseInt($('span').html())+1;
+                console.log(count);
+                $('span').html(count);
+            });
+        });
+    </script>
 <% end %>
