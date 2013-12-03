@@ -7,8 +7,8 @@
           <%= link_to '+', new_organization_path %>
         </div>
         <div class="large-8 columns">
-            <div class="row"
-              <h2><%= link_to 'New Organization', new_organization_path %></h2>
+            <div class="row">
+              <h2><%= link_to 'New Organization', new_organization_path, :id =>'link' %></h2>
             </div>
         </div>
     </div>
@@ -23,7 +23,7 @@
         </div>
         <div class="large-8 columns">
           <div class="row">
-            <h2><%= link_to organization.name, organization %></h2>
+            <h2><%= link_to organization.name, organization, :id =>'link' %></h2>
           </div>
           <div class="row">
             <% owned_events = Event.where(:organization_id => organization.id ) %>

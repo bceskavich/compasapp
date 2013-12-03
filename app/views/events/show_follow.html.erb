@@ -1,8 +1,14 @@
-<%= @title %>
-<br />
+<div class="row" id="attending">
+<div class="row">
+  <h1><%= @title %></h1>
+</div>
 <% if @attendances.any? %>
 	<% @attendances.each do |att| %>
-		<% user = User.find(att.attendee_id) %>
-		<%= link_to user.first_name + ' ' + user.last_name, User %>
+        <div class="large-2 columns attendee">
+            <% user = User.find(att.attendee_id) %>
+            <div class="row"><%= image_tag(user.image) %></div>
+            <div class="row name"><%= link_to user.first_name + ' ' + user.last_name, user, :id => 'link' %></div>
+        </div>
 	<% end %>
 <% end %>
+</div>

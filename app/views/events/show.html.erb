@@ -13,7 +13,8 @@
         </div>
         <div class="row">
           <% if future_event? %>
-            <%= render 'attend_form' if signed_in? %> &nbsp; <a href="<%= attendees_event_path(@event) %>"><strong><%= @event.attendances.count %> attending</strong></a>
+            <%= render 'attend_form' if signed_in? %> &nbsp; <a href="<%= attendees_event_path(@event) %>"><strong><span class="count"><%= @event.attendances.count  %></span> attending</strong></a>
+
           <% else %>
             <b>Rate This Event:</b><br />
             <%= rating_for @event, "event" %>
@@ -70,6 +71,8 @@
 
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script>
+
+
 
 
         var geocoder;
