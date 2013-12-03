@@ -38,16 +38,16 @@ header nav ul li {
 	line-height:4em;
 }
 
-header nav ul li a:hover { background-color: #444; color:#7dbac2;}
+header a:hover { background-color: #444; color:#7dbac2;}
 
 .header_link:hover { color:#7dbac2; }
 
 header nav ul {float:right;}
 
-header nav ul li a { color:#fff; float:left;}
+header a { color:#fff; float:left;}
 
 
-header nav ul li a:visited { color:#fff;}
+header a:visited { color:#fff;}
 
 /*========================================================================================
 login page
