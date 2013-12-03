@@ -1,0 +1,42 @@
+<div id="user_show" class="row">
+<p id="notice"><%= notice %></p>
+  <div class="row">
+    <div class="large-2 columns">
+      <%= image_tag @user.image_url if @user.image? %>
+    </div>
+    <div class="large-10 columns data">
+      <div class="row">
+        <h1><%= @user.first_name + " "+ @user.last_name %></h1>
+      </div>
+      <div class="row">
+        <h2><%= @user.location %><%if @user.school.nil?%>
+          <%else%>
+              <%="--"+ " "+@user.school %>
+          <%end%></h2>
+      </div>
+    </div>
+  </div>
+  <div class="row attended">
+      <h2>Recently Attended</h2>
+  </div>
+      <% attended_events = Attendance.where(:attendee_id => session[:user_id]) %>
+      <% attended_events.each do |event| %>
+        <% event_num = event.attended_event_id %>
+        <% current_event = Event.find(event_num) %>
+      <div class="large-2 columns attended_event">
+        <div class="row attended_image">
+            <%= image_tag current_event.image_url %>
+        </div>
+        <div class="row">
+          <h2><%= link_to current_event.name, current_event %></h2>
+        </div>
+      </div>
+      <%end%>
+
+
+
+<% if user_self? %>
+    <%= link_to 'Edit', edit_user_path(@user) %>  |
+    <%= link_to 'Delete Account', @user, method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>
+</div>

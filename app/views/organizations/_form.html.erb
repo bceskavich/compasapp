@@ -1,0 +1,43 @@
+<div id="org_form" class="row">
+<%= form_for(@organization) do |f| %>
+  <% if @organization.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@organization.errors.count, "error") %> prohibited this organization from being saved:</h2>
+
+      <ul>
+      <% @organization.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="large-6 columns form_column">
+  <div class="row">
+    Admin: <%= @organization.user.first_name + " " + @organization.user.last_name %>
+    <%= f.hidden_field :user_id %>
+  </div>
+
+  <div class="row">
+    <%= f.text_field :name, :placeholder => 'name' %>
+  </div>
+  <div class="row">
+    <%= f.text_field :description, :placeholder => 'description' %>
+  </div>
+  <div class="row">
+    <div class="large-3 columns pic_container">
+      <%= f.label :organization_avatar, 'Upload Image' %>
+      <%= image_tag("/assets/default_org.jpg", :class => "user_pic_small") %>
+    </div>
+    <div class="large-9 columns pic_container">
+        <%= f.file_field :image %>
+    </div>
+  </div>
+  <div class="row">
+    <%= f.text_field :twitter_handle, :placeholder => 'twitter handle' %>
+  </div>
+  <div class="row">
+    <%= f.submit 'Create Organization', :id=> 'form_submit_org' %>
+  </div>
+<% end %>
+</div>
+</div>

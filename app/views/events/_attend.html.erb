@@ -1,0 +1,5 @@
+<%= form_for(current_user.attendances.build(:attended_event_id => @event.id, :attendee_id => session[:user_id]), :remote => :true) do |f| %>
+  <div><%= f.hidden_field :attended_event_id %></div>
+  <div><%= f.hidden_field :attendee_id %></div>
+  <%= f.submit "Attend This Event!" %>
+<% end %>

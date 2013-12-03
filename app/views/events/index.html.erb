@@ -1,0 +1,71 @@
+<div id="events_index" class="row">
+<div class="large-12 columns">
+  <div class="row"><h1>Upcoming Events</h1></div>
+  <div class="row">
+    <div class="large-7 large-centered columns sort">
+        <ul>
+            <li><%= sortable "date", "All Upcoming" %></li>
+            <li>
+              <a>Organization</a>
+              <ul>
+                <% orgs = Organization.all %>
+                <% orgs.each do |o| %>
+                <li><%= link_to o.name, { :org_id => o.id } %></li>
+                <% end %>
+              </ul>
+            </li>
+            <li>
+              <a>Category</a>
+              <ul>
+                <% categories = Category.all %>
+                <% categories.each do |cat| %>
+                <li><%= link_to cat.name, { :cat_id => cat.id } %></li>
+                <% end %>
+              </ul>
+            </li>
+            <li><%= link_to "Past Events", { :past => "show" } %></li>
+        </ul>
+    </div>
+  </div>
+</div>
+  <% if org_owner? %>
+  <div class="large-4 columns event_listing">
+    <div class="row new_block">
+          <%= link_to '+ new', new_event_path %>
+    </div>
+    <div class="row">
+      <h2>Event Name</h2>
+    </div>
+    <div class="row">
+       Location
+    </div>
+    <div class="row">
+      date -- time
+    </div>
+  </div>
+  <% end %>
+<% @events.each do |event| %>
+
+    <div class="large-4 columns event_listing">
+      <div class="row event_image">
+        <%= image_tag event.image_url %>
+       </div>
+      <div class="row">
+        <h2><%= link_to event.name, event %></h2>
+      </div>
+      <div class="row">
+        <%= event.location %>
+      </div>
+      <div class="row">
+        <%= event.time.in_time_zone.strftime("%l:%M%P") %> --  <%= event.date.strftime("%B %e, %Y") %>
+      </div>
+    </div>
+
+<% end %>
+
+
+<br />
+<% if org_owner? %>
+    <%= link_to 'New Event', new_event_path %>
+<% end %>
+</div>

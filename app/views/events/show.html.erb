@@ -1,0 +1,113 @@
+
+<div id="event_show" class="row">
+  <div class="row">
+    <div class="large-6 columns event_image">
+      <%= image_tag @event.image_url if @event.image? %>
+    </div>
+    <div class="large-6 columns data">
+        <div class="row">
+          <h1><%= @event.name %></h1>
+        </div>
+        <div class="row">
+            <h2><%= @event.time.strftime("%l:%M%P") %>&nbsp;--&nbsp;<%= @event.date.strftime("%B %e, %Y") %></h2>
+        </div>
+        <div class="row">
+          <% if future_event? %>
+            <%= render 'attend_form' if signed_in? %> &nbsp; <a href="<%= attendees_event_path(@event) %>"><strong><%= @event.attendances.count %> attending</strong></a>
+          <% else %>
+            <b>Rate This Event:</b><br />
+            <%= rating_for @event, "event" %>
+            <br />
+          <% end %>
+        </div>
+      <div class="row">
+        Location: <%= @event.location %>
+      </div>
+      </br>
+      <div class="row">
+          <%= @event.description %>
+      </div>
+      </br>
+      <div class="row">
+        <% if @event.organization_id? %>
+            Hosted By: <%= link_to @event.organization.name, @event.organization %>
+        <% end %>
+      </div>
+      <div class="row">
+        <% if @event.category_id? %>
+            Category: <%= @event.category.name %>
+        <% end %>
+      </div>
+      <div class="row">
+        Ticket Info:<%= @event.ticket_info %>
+      </div>
+    </div><!--end data-->
+  </div>
+  <p id="notice"><%= notice %></p>
+
+    <%if event_creator? %>
+        <%= link_to 'Edit', edit_event_path(@event) %> |
+        <td><%= link_to 'Delete Event', @event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <%end %>
+</br>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'compasapp'; // required: replace example with your forum shortname
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</br>
+</br>
+    <div id="map-canvas"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+
+
+        var geocoder;
+        var map;
+        function initialize() {
+            geocoder = new google.maps.Geocoder();
+            var latlng = new google.maps.LatLng(-34.397, 150.644);
+            var mapOptions = {
+                zoom: 8,
+                center: latlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+            var place = <%= @event.to_json.html_safe %>;
+            console.log(place.location);
+            var address = place.location;
+            geocoder.geocode( { 'address': address}, function(results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    map.setCenter(results[0].geometry.location);
+                    var marker = new google.maps.Marker({
+                        map: map,
+                        position: results[0].geometry.location
+                    });
+                } else {
+                    alert('Geocode was not successful for the following reason: ' + status);
+                }
+            });
+
+        }
+
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+</div>
+
+
+
+
+
+

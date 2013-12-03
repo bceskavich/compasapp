@@ -1,0 +1,62 @@
+<div id="org_show" class="row">
+<p id="notice"><%= notice %></p>
+  <div class="row">
+    <div class="large-1 columns event_image">
+      <%= image_tag @organization.image_url if @organization.image? %>
+    </div>
+    <div class="large-11 columns data">
+      <div class="row">
+        <h1><%= @organization.name %></h1>
+      </div>
+      <div class="row">
+        <%= @organization.description %>
+      </div>
+    </div><!--end data-->
+  </div>
+  <div class="row attended">
+    <h2>Events:</h2>
+  </div>
+  <div class="row">
+    <% owned_events = Event.where(:organization_id => @organization.id ) %>
+    <% owned_events.each do |event| %>
+        <% event_num = event.id %>
+        <% current_event = Event.find(event_num) %>
+        <div class="large-3 columns attended_event">
+          <div class="row attended_image">
+            <%= image_tag current_event.image_url %>
+          </div>
+          <div class="row">
+            <h2><%= link_to current_event.name, current_event %></h2>
+          </div>
+          <div class="row">
+            <%= current_event.time.in_time_zone.strftime("%l:%M%P") %> --  <%= current_event.date.strftime("%B %e, %Y") %>
+          </div>
+        </div>
+    <%end%>
+  </div>
+
+
+<% if org_creator? %>
+    <%= link_to 'Edit', edit_organization_path(@organization) %> |
+    <%= link_to 'Delete Organization', @organization, method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>
+<div id="twitter_div">
+  <ul id="twitter_update_list"></ul>
+</div>
+
+<!--<script>
+$(function() {
+    $.ajax({
+        url:"https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=lggorman&count=2",
+        type:"GET",
+        dataType: "json",
+        success: function(data) {
+            console.log(data);
+        }
+    })
+});
+
+</script>-->
+</div>
+
+

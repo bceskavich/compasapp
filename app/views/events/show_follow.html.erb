@@ -1,0 +1,8 @@
+<%= @title %>
+<br />
+<% if @attendances.any? %>
+	<% @attendances.each do |att| %>
+		<% user = User.find(att.attendee_id) %>
+		<%= link_to user.first_name + ' ' + user.last_name, User %>
+	<% end %>
+<% end %>

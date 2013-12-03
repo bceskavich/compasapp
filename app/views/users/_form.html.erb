@@ -1,0 +1,51 @@
+<div id="user_form" class="row">
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="large-6 columns form_column">
+  <div class="row">
+    <%= f.text_field :user_name, :placeholder => 'username' %>
+  </div>
+  <div class="row">
+    <%= f.text_field :first_name, :placeholder => 'first name' %>
+  </div>
+  <div class="row">
+    <%= f.text_field :last_name, :placeholder => 'last name' %>
+  </div>
+  <div class="row">
+    <%= f.password_field :password, :placeholder => 'password' %>
+  </div>
+  <div class="row">
+    <%= f.password_field :password_confirmation, :placeholder => 'password confirmation'  %>
+  </div>
+</div>
+<div class="large-6 columns form_column">
+  <div class="row">
+    <%= f.text_field :location, :placeholder => 'location'  %>
+  </div>
+  <div class="row">
+    <%= f.text_field :school, :placeholder => 'school' %>
+  </div>
+  <div class="row">
+    <div class="large-3 columns pic_container">
+         <%= image_tag("/assets/default_user_pic.jpg", :class => "user_pic_small") %>
+    </div>
+    <div class="large-9 columns">
+        <%= f.file_field :image %>
+    </div>
+  </div>
+  <div class="actions row">
+    <%= f.submit 'Sign Up', :id=>'form_submit' %>
+  </div>
+<% end %>
+</div>
+</div>

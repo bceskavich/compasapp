@@ -1,0 +1,44 @@
+<div id="login">
+<div class="row">
+<div class="large-12 columns">
+  <div id="login_box">
+  <h1>Log In</h1>
+
+<% if flash[:error] %>
+	<div id="error_explanation">
+		<%= flash[:error] %>
+	</div>
+<% end %>
+
+<%= form_tag do %>
+
+        <div class="row">
+		    <%= text_field_tag :username, params[:username], :placeholder => 'username' %>
+        </div>
+        <div class="row">
+		    <%= password_field_tag :password, params[:password], :placeholder =>'password' %>
+        </div>
+        <div class="row">
+		    <%= submit_tag "Log In", :class => 'login_submit' %>
+                <%= link_to 'New User', new_user_path, :class => 'sign_up' %>
+
+        </div>
+        <div class="row facebook">
+        <% if session[:user_id] %>
+            <% user = User.find(session[:user_id]) %>
+            Welcome <%= user.first_name %>!
+        <% else %>
+            <%= link_to "Sign in with Facebook", "/auth/facebook" %>
+        <% end %>
+        </div>
+
+    <% end %>
+    </div>
+</div><!--end column-->
+</div><!--end row-->
+</div><!--end #login-->
+
+
+
+
+

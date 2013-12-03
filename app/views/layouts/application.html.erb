@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Compas</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+  <script src="js/vendor/custom.modernizr.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+</head>
+<body>
+
+
+<header>
+  <div class="row">
+    <div class="pull-0.5 large-12 columns">
+      <div class=" large-3 columns">
+        <%= image_tag("compass.png", :alt => "logo") %>
+        <h1>compas</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><%=link_to 'about', page_path('about')%></li>
+          <li>\\</li>
+          <li><%=link_to 'events', events_path, :class=> 'header_link' %></li>
+          <li>\\</li>
+          <li><%=link_to 'organizations', organizations_path, :class=> 'header_link' %></li>
+          <li>\\</li>
+          <% if session[:user_id] %>
+              <% user = User.find(session[:user_id]) %>
+              <li><%= user.first_name %></li> <li>-</li>
+              <li><%= link_to 'logout', :controller => 'auth', :action => 'logout',:class=> 'header_link'  %></li>
+          <% else %>
+              <li><%= link_to 'login', :controller => 'auth', :action => 'login',:class=> 'header_link'  %></li>
+          <% end %>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+</header>
+
+<%= yield %>
+
+
+
+
+
+</body>
+</html>

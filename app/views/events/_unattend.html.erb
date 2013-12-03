@@ -1,0 +1,3 @@
+<%= form_for(current_user.attendances.find_by_attended_event_id(@event.id), html: {:method => :delete}, :remote => :true) do |f| %>
+  <%= f.submit "Leave this event." %>
+<% end %>

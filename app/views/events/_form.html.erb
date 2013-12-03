@@ -1,0 +1,89 @@
+<div id="event_form" class="row">
+<%= form_for(@event) do |f| %>
+  <% if @event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
+
+      <ul>
+      <% @event.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="large-6 columns form_column">
+    <div class="row">
+      Admin: <%= @event.user.first_name + " " + @event.user.last_name %>
+      <%= f.hidden_field :user_id %>
+    </div>
+    <div class="row">
+      <%= f.text_field :name, :placeholder => 'event name' %>
+    </div>
+
+    <div class="row">
+        <%= f.text_field :location, :placeholder => 'address' %>
+    </div>
+    <div class="row">
+      <%= f.text_field :ticket_info, :placeholder =>'ticket info' %>
+    </div>
+    <div class="row">
+      <%= f.text_field :description, :placeholder => 'description' %>
+    </div>
+
+    <div class="row">
+      <%= f.text_field :date, :placeholder => 'date',:id => 'datepicker' %>
+    </div>
+    <script>
+        $(function() {
+            $( "#datepicker" ).datepicker({ dateFormat: 'yy-mm-dd' }
+            );
+        });
+    </script>
+    <div class="row">
+      <div class="large-1 columns">
+        <%= f.label :time, 'Time:' %>
+      </div>
+      <div class="large-11 columns">
+        <%= f.time_select :time, :ampm => 'true' %>
+      </div>
+    </div>
+
+  </div>
+  <div class="large-6 columns form_column">
+    <div class="row">
+      <div class="large-2 columns">
+        <%= f.label :organization_id, 'Organization:' %>
+      </div>
+      <div class="large-10 columns">
+        <% owned_orgs = Organization.where(:user_id => session[:user_id]) %>
+        <% org_options = owned_orgs.map { |o| [o.name, o.id]  } %>
+        <%= f.select :organization_id, org_options %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-2 columns">
+        <%= f.label :category_id, 'Category:' %>
+      </div>
+      <div class="large-10 columns">
+        <% all_categories = Category.all %>
+        <% menu_items = all_categories.map { |c| [ c.name, c.id ] } %>
+        <%= f.select :category_id, menu_items %>
+      </div>
+    </div>
+
+
+      <div class="row">
+        <div class="large-3 columns pic_container">
+          <%= f.label :image, 'Upload Image' %>
+          <%= image_tag("/assets/default_event.jpg", :class => "user_pic_small") %>
+         </div>
+        <div class="large-9 columns pic_container">
+            <%= f.file_field :image %>
+        </div>
+      </div>
+      <div class="row">
+        <%= f.submit 'Create Event', :id=>'form_submit' %>
+      </div>
+    <% end %>
+  </div>
+</div>
