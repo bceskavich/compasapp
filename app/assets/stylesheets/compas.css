@@ -59,8 +59,8 @@ login page
 
 #login {
     background-image: url('/assets/juice_jam.jpg');
+    background-size:cover;
     background-repeat: no-repeat;
-    background-size:100%;
     height:780px;
     margin-top:0;
 }
@@ -134,7 +134,7 @@ events index
 
 #events_index ul {margin: 5px auto; }
 
-#events_index ul li{list-style:none; float:left; padding:1% 3.5%; font-size:1.2em; }
+#events_index ul li{list-style:none; float:left; padding:1% 1.5%; font-size:1.2em; }
 
 #events_index ul a { color:#0d95a3; }
 #events_index ul a:hover { background:none; text-decoration: underline; }
