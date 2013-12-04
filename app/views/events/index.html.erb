@@ -65,9 +65,8 @@
 
 <% end %>
 
+<div class="large-12 columns">
+  <%= will_paginate @events %>
+</div>
 
-<br />
-<% if org_owner? %>
-    <%= link_to 'New Event', new_event_path %>
-<% end %>
 </div>
