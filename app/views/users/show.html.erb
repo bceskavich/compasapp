@@ -1,5 +1,5 @@
 <div id="user_show" class="row">
-<p id="notice"><%= notice %></p>
+  <p id="notice"><%= notice %></p>
   <div class="row">
     <div class="large-2 columns">
       <%= image_tag @user.image_url if @user.image? %>
@@ -16,13 +16,16 @@
       </div>
     </div>
   </div>
+
   <% if user_self? %>
       <%= link_to 'Edit', edit_user_path(@user) %>  |
       <%= link_to 'Delete Account', @user, method: :delete, data: { confirm: 'Are you sure?' } %>
   <% end %>
+
   <div class="row attended">
       <h2>Recently Attended</h2>
   </div>
+  <div class="row">
       <% attended_events = Attendance.where(:attendee_id => session[:user_id]) %>
       <% attended_events.each do |event| %>
         <% event_num = event.attended_event_id %>
@@ -36,6 +39,6 @@
         </div>
       </div>
       <%end%>
-
+  </div>
 
 </div>

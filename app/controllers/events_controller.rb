@@ -93,7 +93,7 @@ class EventsController < ApplicationController
   def attendees
     @title = "Attendees"
     @event = Event.find(params[:id])
-    @attendances = @event.attendances
+    @attendances = @event.attendances.page(params[:page]).per_page(30)
     render 'show_follow'
   end
 
