@@ -185,6 +185,10 @@ o14 = Organization.new(:name => 'Z89', :description => "Z89 plays Syracuse's hit
 o14.image = File.open('app/assets/images/z89.jpg')
 o14.save
 
+o15 = Organization.new(:name => 'SU Athletics', :description => "Syracuse University's official athletics department.", :user_id => User.find_by_user_name('bceskavich').id)
+o15.image = File.open('app/assets/images/suathletics.jpg')
+o15.save
+
 ##### Event Seeds #####
 
 e1 = Event.new(:name => 'Macklemore and Ryan Lewis', :location => 'Carrier Dome, Syracuse, NY', :date => '2013-11-11', :time => '2000-01-01 18:30:00 UTC', :ticket_info => 'Purchase at Box Office', :description => 'Macklemore and Ryan Lewis are coming to the Carrier Dome!', :category_id => Category.find_by_name('Concert').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
@@ -267,11 +271,11 @@ e20 = Event.new(:name => 'Export Controls in a University Setting', :location =>
 e20.image = File.open('app/assets/images/syracuse.jpg')
 e20.save
 
-e21 = Event.new(:name => 'Soulful Sitdowns', :location => '204 Tolley Building, Syracuse, NY', :date => '2013-12-05', :time => '2000-01-01 19:00:00 UTC', :ticket_info => 'Free', :description => 'A reflective group conversation about spirituality', :category_id => Category.find_by_name('Mind/Body').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
+e21 = Event.new(:name => 'Soulful Sitdowns', :location => '204 Tolley Building, Syracuse, NY', :date => '2013-12-05', :time => '2000-01-01 19:00:00 UTC', :ticket_info => 'Free', :description => 'A reflective group conversation about spirituality', :category_id => Category.find_by_name('Mind/Body').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('SU Athletics').id)
 e21.image = File.open('app/assets/images/soulful_sitdowns.png')
 e21.save
 
-e22 = Event.new(:name => 'Fit Friday Fitness Class', :location => 'Flanagan Fitness Studio, Syracuse, NY', :date => '2013-12-06', :time => '2000-01-01 12:10:00 UTC', :ticket_info => 'Free and Open to the Public', :description => 'Come relieve some of that end of the semester stress with a good workout!', :category_id => Category.find_by_name('Mind/Body').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
+e22 = Event.new(:name => 'Fit Friday Fitness Class', :location => 'Flanagan Fitness Studio, Syracuse, NY', :date => '2013-12-06', :time => '2000-01-01 12:10:00 UTC', :ticket_info => 'Free and Open to the Public', :description => 'Come relieve some of that end of the semester stress with a good workout!', :category_id => Category.find_by_name('Mind/Body').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('SU Athletics').id)
 e22.image = File.open('app/assets/images/fitness.jpg')
 e22.save
 
@@ -283,15 +287,15 @@ e24 = Event.new(:name => 'Resumania', :location => '235 Schine Student Center, S
 e24.image = File.open('app/assets/images/cuse_connect.png')
 e24.save
 
-e25 = Event.new(:name => 'SU Orange v. Binghamton', :location => 'Carrier Dome, Syracuse, NY', :date => '2013-12-07', :time => '2000-01-01 19:00:00 UTC', :ticket_info => 'Box Office', :description => 'The SU Mens basketball team take on Binghamton in the last home game before winter break.', :category_id => Category.find_by_name('Sports').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
+e25 = Event.new(:name => 'SU Orange v. Binghamton', :location => 'Carrier Dome, Syracuse, NY', :date => '2013-12-07', :time => '2000-01-01 19:00:00 UTC', :ticket_info => 'Box Office', :description => 'The SU Mens basketball team take on Binghamton in the last home game before winter break.', :category_id => Category.find_by_name('Sports').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('SU Athletics').id)
 e25.image = File.open('app/assets/images/binghamton.gif')
 e25.save
 
-e26 = Event.new(:name => 'SU Women Ice Hockey v. Lindenwood', :location => 'Tennity Ice Skating Pavilion, Syracuse, NY', :date => '2013-06-07', :time => '2000-01-01 19:00:00 UTC', :ticket_info => 'Box Office', :description => 'The womens ice hockey team take on Lindenwood.', :category_id => Category.find_by_name('Sports').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
+e26 = Event.new(:name => 'SU Women Ice Hockey v. Lindenwood', :location => 'Tennity Ice Skating Pavilion, Syracuse, NY', :date => '2013-06-07', :time => '2000-01-01 19:00:00 UTC', :ticket_info => 'Box Office', :description => 'The womens ice hockey team take on Lindenwood.', :category_id => Category.find_by_name('Sports').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('SU Athletics').id)
 e26.image = File.open('app/assets/images/lindenwood.gif')
 e26.save
 
-e27 = Event.new(:name => 'SU Women Basketball v. Niagara', :location => 'Carrier Dome, Syracuse, NY', :date => '2013-12-19', :time => '2000-01-01 19:00:00 UTC', :ticket_info => 'Box Office', :description => 'The womens backetball team takes on Niagara.', :category_id => Category.find_by_name('Sports').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
+e27 = Event.new(:name => 'SU Women Basketball v. Niagara', :location => 'Carrier Dome, Syracuse, NY', :date => '2013-12-19', :time => '2000-01-01 19:00:00 UTC', :ticket_info => 'Box Office', :description => 'The womens backetball team takes on Niagara.', :category_id => Category.find_by_name('Sports').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('SU Athletics').id)
 e27.image = File.open('app/assets/images/niagara.gif')
 e27.save
 
