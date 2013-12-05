@@ -533,7 +533,7 @@ attendees page
     font-weight:bold;;
 }
 
-#attending .attendee {float:left; padding-right:3%;}
+#attending .attendee {float:left; padding-right:3%; height:300px;}
 
 #attending .attendee .name {text-align:center; margin-top:5px; margin-bottom:25px;}
 

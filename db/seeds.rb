@@ -17,6 +17,7 @@ Event.destroy_all
 Organization.destroy_all
 User.destroy_all
 Category.destroy_all
+Attendance.destroy_all
 
 ##### Category Seeds #####
 
@@ -293,4 +294,156 @@ e26.save
 e27 = Event.new(:name => 'SU Women Basketball v. Niagara', :location => 'Carrier Dome, Syracuse, NY', :date => '2013-12-19', :time => '2000-01-01 19:00:00 UTC', :ticket_info => 'Box Office', :description => 'The womens backetball team takes on Niagara.', :category_id => Category.find_by_name('Sports').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
 e27.image = File.open('app/assets/images/niagara.gif')
 e27.save
+
+### Attendances Generation ###
+
+Attendance.create(:attended_event_id => e1.id, :attendee_id => u1.id)
+Attendance.create(:attended_event_id => e2.id, :attendee_id => u1.id)
+Attendance.create(:attended_event_id => e3.id, :attendee_id => u1.id)
+Attendance.create(:attended_event_id => e4.id, :attendee_id => u1.id)
+Attendance.create(:attended_event_id => e5.id, :attendee_id => u1.id)
+Attendance.create(:attended_event_id => e6.id, :attendee_id => u1.id)
+Attendance.create(:attended_event_id => e7.id, :attendee_id => u1.id)
+Attendance.create(:attended_event_id => e8.id, :attendee_id => u1.id)
+Attendance.create(:attended_event_id => e9.id, :attendee_id => u1.id)
+Attendance.create(:attended_event_id => e10.id, :attendee_id => u1.id)
+Attendance.create(:attended_event_id => e11.id, :attendee_id => u1.id)
+Attendance.create(:attended_event_id => e12.id, :attendee_id => u1.id)
+Attendance.create(:attended_event_id => e13.id, :attendee_id => u1.id)
+Attendance.create(:attended_event_id => e14.id, :attendee_id => u1.id)
+Attendance.create(:attended_event_id => e15.id, :attendee_id => u1.id)
+Attendance.create(:attended_event_id => e16.id, :attendee_id => u1.id)
+Attendance.create(:attended_event_id => e17.id, :attendee_id => u1.id)
+Attendance.create(:attended_event_id => e18.id, :attendee_id => u1.id)
+Attendance.create(:attended_event_id => e19.id, :attendee_id => u1.id)
+Attendance.create(:attended_event_id => e20.id, :attendee_id => u1.id)
+Attendance.create(:attended_event_id => e21.id, :attendee_id => u1.id)
+Attendance.create(:attended_event_id => e22.id, :attendee_id => u1.id)
+
+Attendance.create(:attended_event_id => e1.id, :attendee_id => u2.id)
+Attendance.create(:attended_event_id => e2.id, :attendee_id => u2.id)
+Attendance.create(:attended_event_id => e3.id, :attendee_id => u2.id)
+Attendance.create(:attended_event_id => e4.id, :attendee_id => u2.id)
+Attendance.create(:attended_event_id => e5.id, :attendee_id => u2.id)
+Attendance.create(:attended_event_id => e6.id, :attendee_id => u2.id)
+Attendance.create(:attended_event_id => e7.id, :attendee_id => u2.id)
+Attendance.create(:attended_event_id => e8.id, :attendee_id => u2.id)
+Attendance.create(:attended_event_id => e9.id, :attendee_id => u2.id)
+Attendance.create(:attended_event_id => e10.id, :attendee_id => u2.id)
+Attendance.create(:attended_event_id => e11.id, :attendee_id => u2.id)
+Attendance.create(:attended_event_id => e12.id, :attendee_id => u2.id)
+Attendance.create(:attended_event_id => e13.id, :attendee_id => u2.id)
+Attendance.create(:attended_event_id => e14.id, :attendee_id => u2.id)
+Attendance.create(:attended_event_id => e15.id, :attendee_id => u2.id)
+Attendance.create(:attended_event_id => e16.id, :attendee_id => u2.id)
+Attendance.create(:attended_event_id => e17.id, :attendee_id => u2.id)
+Attendance.create(:attended_event_id => e18.id, :attendee_id => u2.id)
+Attendance.create(:attended_event_id => e19.id, :attendee_id => u2.id)
+Attendance.create(:attended_event_id => e20.id, :attendee_id => u2.id)
+Attendance.create(:attended_event_id => e21.id, :attendee_id => u2.id)
+Attendance.create(:attended_event_id => e22.id, :attendee_id => u2.id)
+
+Attendance.create(:attended_event_id => e1.id, :attendee_id => u3.id)
+Attendance.create(:attended_event_id => e2.id, :attendee_id => u3.id)
+Attendance.create(:attended_event_id => e3.id, :attendee_id => u3.id)
+Attendance.create(:attended_event_id => e4.id, :attendee_id => u3.id)
+Attendance.create(:attended_event_id => e5.id, :attendee_id => u3.id)
+Attendance.create(:attended_event_id => e6.id, :attendee_id => u3.id)
+Attendance.create(:attended_event_id => e7.id, :attendee_id => u3.id)
+Attendance.create(:attended_event_id => e8.id, :attendee_id => u3.id)
+Attendance.create(:attended_event_id => e9.id, :attendee_id => u3.id)
+Attendance.create(:attended_event_id => e10.id, :attendee_id => u3.id)
+Attendance.create(:attended_event_id => e11.id, :attendee_id => u3.id)
+Attendance.create(:attended_event_id => e12.id, :attendee_id => u3.id)
+Attendance.create(:attended_event_id => e13.id, :attendee_id => u3.id)
+Attendance.create(:attended_event_id => e14.id, :attendee_id => u3.id)
+Attendance.create(:attended_event_id => e25.id, :attendee_id => u3.id)
+Attendance.create(:attended_event_id => e16.id, :attendee_id => u3.id)
+Attendance.create(:attended_event_id => e17.id, :attendee_id => u3.id)
+Attendance.create(:attended_event_id => e18.id, :attendee_id => u3.id)
+Attendance.create(:attended_event_id => e19.id, :attendee_id => u3.id)
+Attendance.create(:attended_event_id => e20.id, :attendee_id => u3.id)
+Attendance.create(:attended_event_id => e21.id, :attendee_id => u3.id)
+Attendance.create(:attended_event_id => e22.id, :attendee_id => u3.id)
+
+Attendance.create(:attended_event_id => e1.id, :attendee_id => m1.id)
+Attendance.create(:attended_event_id => e2.id, :attendee_id => m1.id)
+Attendance.create(:attended_event_id => e3.id, :attendee_id => m1.id)
+
+Attendance.create(:attended_event_id => e4.id, :attendee_id => m2.id)
+Attendance.create(:attended_event_id => e5.id, :attendee_id => m2.id)
+Attendance.create(:attended_event_id => e6.id, :attendee_id => m2.id)
+
+Attendance.create(:attended_event_id => e7.id, :attendee_id => m3.id)
+Attendance.create(:attended_event_id => e8.id, :attendee_id => m3.id)
+Attendance.create(:attended_event_id => e9.id, :attendee_id => m3.id)
+
+Attendance.create(:attended_event_id => e10.id, :attendee_id => m4.id)
+Attendance.create(:attended_event_id => e11.id, :attendee_id => m4.id)
+Attendance.create(:attended_event_id => e12.id, :attendee_id => m4.id)
+
+Attendance.create(:attended_event_id => e13.id, :attendee_id => m5.id)
+Attendance.create(:attended_event_id => e14.id, :attendee_id => m5.id)
+Attendance.create(:attended_event_id => e15.id, :attendee_id => m5.id)
+
+Attendance.create(:attended_event_id => e16.id, :attendee_id => m6.id)
+Attendance.create(:attended_event_id => e17.id, :attendee_id => m6.id)
+Attendance.create(:attended_event_id => e18.id, :attendee_id => m6.id)
+
+Attendance.create(:attended_event_id => e19.id, :attendee_id => m7.id)
+Attendance.create(:attended_event_id => e20.id, :attendee_id => m7.id)
+Attendance.create(:attended_event_id => e21.id, :attendee_id => m7.id)
+
+Attendance.create(:attended_event_id => e22.id, :attendee_id => m8.id)
+Attendance.create(:attended_event_id => e23.id, :attendee_id => m8.id)
+Attendance.create(:attended_event_id => e24.id, :attendee_id => m8.id)
+
+Attendance.create(:attended_event_id => e25.id, :attendee_id => m9.id)
+Attendance.create(:attended_event_id => e26.id, :attendee_id => m9.id)
+Attendance.create(:attended_event_id => e27.id, :attendee_id => m9.id)
+
+Attendance.create(:attended_event_id => e1.id, :attendee_id => m10.id)
+Attendance.create(:attended_event_id => e2.id, :attendee_id => m10.id)
+Attendance.create(:attended_event_id => e3.id, :attendee_id => m10.id)
+
+Attendance.create(:attended_event_id => e1.id, :attendee_id => f1.id)
+Attendance.create(:attended_event_id => e2.id, :attendee_id => f1.id)
+Attendance.create(:attended_event_id => e3.id, :attendee_id => f1.id)
+
+Attendance.create(:attended_event_id => e4.id, :attendee_id => f2.id)
+Attendance.create(:attended_event_id => e5.id, :attendee_id => f2.id)
+Attendance.create(:attended_event_id => e6.id, :attendee_id => f2.id)
+
+Attendance.create(:attended_event_id => e7.id, :attendee_id => f3.id)
+Attendance.create(:attended_event_id => e8.id, :attendee_id => f3.id)
+Attendance.create(:attended_event_id => e9.id, :attendee_id => f3.id)
+
+Attendance.create(:attended_event_id => e10.id, :attendee_id => f4.id)
+Attendance.create(:attended_event_id => e11.id, :attendee_id => f4.id)
+Attendance.create(:attended_event_id => e12.id, :attendee_id => f4.id)
+
+Attendance.create(:attended_event_id => e13.id, :attendee_id => f5.id)
+Attendance.create(:attended_event_id => e14.id, :attendee_id => f5.id)
+Attendance.create(:attended_event_id => e15.id, :attendee_id => f5.id)
+
+Attendance.create(:attended_event_id => e16.id, :attendee_id => f6.id)
+Attendance.create(:attended_event_id => e17.id, :attendee_id => f6.id)
+Attendance.create(:attended_event_id => e18.id, :attendee_id => f6.id)
+
+Attendance.create(:attended_event_id => e19.id, :attendee_id => f7.id)
+Attendance.create(:attended_event_id => e20.id, :attendee_id => f7.id)
+Attendance.create(:attended_event_id => e21.id, :attendee_id => f7.id)
+
+Attendance.create(:attended_event_id => e22.id, :attendee_id => f8.id)
+Attendance.create(:attended_event_id => e23.id, :attendee_id => f8.id)
+Attendance.create(:attended_event_id => e24.id, :attendee_id => f8.id)
+
+Attendance.create(:attended_event_id => e25.id, :attendee_id => f9.id)
+Attendance.create(:attended_event_id => e26.id, :attendee_id => f9.id)
+Attendance.create(:attended_event_id => e27.id, :attendee_id => f9.id)
+
+Attendance.create(:attended_event_id => e1.id, :attendee_id => f10.id)
+Attendance.create(:attended_event_id => e2.id, :attendee_id => f10.id)
+Attendance.create(:attended_event_id => e3.id, :attendee_id => f10.id)
+
 
