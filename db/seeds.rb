@@ -186,27 +186,111 @@ o14.save
 
 ##### Event Seeds #####
 
-e1 = Event.new(:name => 'Macklemore and Ryan Lewis', :location => 'Carrier Dome', :date => '2013-11-11', :time => '2000-01-01 18:30:00 UTC', :ticket_info => 'Purchase at Box Office', :description => 'Macklemore and Ryan Lewis are coming to the Carrier Dome!', :category_id => Category.find_by_name('Concert').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
-e1.image = File.open('app/assets/images/macklemore.png')
+e1 = Event.new(:name => 'Macklemore and Ryan Lewis', :location => 'Carrier Dome, Syracuse, NY', :date => '2013-11-11', :time => '2000-01-01 18:30:00 UTC', :ticket_info => 'Purchase at Box Office', :description => 'Macklemore and Ryan Lewis are coming to the Carrier Dome!', :category_id => Category.find_by_name('Concert').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
+e1.image = File.open(IMAGE_FOLDER + '/macklemore.png')
 e1.save
 
-e2 = Event.new(:name => 'Hudson Mohawke', :location => 'Schine', :date => '2013-11-29', :time => '2000-01-01 20:00:00 UTC', :ticket_info => 'Purchase at Box Office', :description => 'University Union is proud to announce Hudson Mohawke w/ Special Guest Cashmere Cat on Wednesday, December 4th!', :category_id => Category.find_by_name('Concert').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
-e2.image = File.open('app/assets/images/hudson_mohawk.png')
+e2 = Event.new(:name => 'Hudson Mohawke', :location => 'Schine Student Center, Syracuse, NY', :date => '2013-12-05', :time => '2000-01-01 20:00:00 UTC', :ticket_info => 'Purchase at Box Office', :description => 'University Union is proud to announce Hudson Mohawke w/ Special Guest Cashmere Cat on Wednesday, December 4th!', :category_id => Category.find_by_name('Concert').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
+e2.image = File.open(IMAGE_FOLDER + '/hudson_mohawk.png')
 e2.save
 
-e3 = Event.new(:name => 'Chance The Rapper', :location => 'Schine', :date => '2013-12-05', :time => '2000-01-01 19:00:00 UTC', :ticket_info => 'Purchase at Box Office', :description => 'University Union is proud to announce Chance The Rapper’s Social Experiment Tour w/ Special Guests DJ Rashad and Spinn on November 6th!', :category_id => Category.find_by_name('Concert').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
-e3.image = File.open('app/assets/images/chance.png')
+e3 = Event.new(:name => 'Chance the Rapper', :location => 'Schine Student Center, Syracuse, NY', :date => '2013-11-06', :time => '2000-01-01 20:00:00 UTC', :ticket_info => 'Purchase at Box Office', :description => 'University Union is proud to announce Chance the Rapper, bringing his Social Experiment Tour with Special Guests DJ Rashad and Spinn to the Underground on November 6th!', :category_id => Category.find_by_name('Concert').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
+e3.image = File.open(IMAGE_FOLDER + '/chance.png')
 e3.save
 
-e4 = Event.new(:name => 'Juice Jam', :location => 'Skytop Field', :date => '2013-09-08', :time => '2000-01-01 12:00:00 UTC', :ticket_info => 'Purchase at Box Office', :description => 'The first ever student-run music festival in the country, only at Syracuse Universitys Skytop Field!', :category_id => Category.find_by_name('Concert').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
+e4 = Event.new(:name => 'Juice Jam', :location => 'Skytop Field, Syracuse, NY', :date => '2013-09-08', :time => '2000-01-01 12:00:00 UTC', :ticket_info => 'Purchase at Box Office', :description => 'The first ever student-run music festival in the country, only at Syracuse Universitys Skytop Field.!', :category_id => Category.find_by_name('Concert').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
 e4.image = File.open('app/assets/images/juice_jam.png')
 e4.save
 
-e5 = Event.new(:name => 'David Sedaris', :location => 'Goldsten', :date => '2013-12-09', :time => '2000-01-01 19:00:00 UTC', :ticket_info => 'Buy Online', :description => 'Dont miss the insights of author and comedian David Sedaris!', :category_id => Category.find_by_name('Speaker/Lecture').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
+e5 = Event.new(:name => 'David Sedaris', :location => 'Goldstein Auditorium, Schine Student Center, Syracuse, NY', :date => '2013-12-09', :time => '2000-01-01 19:00:00 UTC', :ticket_info => 'Buy Online', :description => 'Dont miss the insights of author and comedian David Sedaris!', :category_id => Category.find_by_name('Speaker/Lecture').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
 e5.image = File.open('app/assets/images/hudmo.jpg')
 e5.save
 
-e6 = Event.new(:name => 'Block Party', :location => 'Carrier Dome', :date => '2013-04-26', :time => '2000-01-01 18:30:00 UTC', :ticket_info => 'Purchase at Box Office', :description => 'Ke$ha, Trey Songz, and Drop City Yacht Club will be performing!', :category_id => Category.find_by_name('Concert').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
+e6 = Event.new(:name => 'Block Party', :location => 'Carrier Dome', :date => '2013-04-26', :time => '2000-01-01 18:30:00 UTC', :ticket_info => 'Purchase at Box Office', :description => 'Ke$ha, Trey Songz, & Drop City Yacht Club will be performing!', :category_id => Category.find_by_name('Concert').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
 e6.image = File.open('app/assets/images/juice_jam.png')
 e6.save
+
+e7 = Event.new(:name => '20 Watts Launch Party', :location => 'Funk N Waffles, Syracuse, NY', :date => '2013-12-05', :time => '2000-01-01 18:30:00 UTC', :ticket_info => '$3 at the Door', :description => 'Come hang with 20 Watts Magazine and Baked Magazine at Funk n Waffles this Thursday, December 5th for our joint launch party!', :category_id => Category.find_by_name('Social').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('20 Watts').id)
+e7.image = File.open('app/assets/images/funk_n_waffles.jpg')
+e7.save
+
+e8 = Event.new(:name => 'Active Minds Monthly Info Session', :location => 'HBC, Syracuse University, Syracuse, NY', :date => '2013-12-09', :time => '2000-01-01 17:30:00 UTC', :ticket_info => 'Free', :description => 'Come learn how to get involved with Active Minds at Syracuse!', :category_id => Category.find_by_name('Academic/Information Session').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('Active Minds').id)
+e8.image = File.open('app/assets/images/activeminds.jpg')
+e8.save
+
+e9 = Event.new(:name => 'Rose Laying Ceremony', :location => 'Wall of Remembrance, Syracuse, NY', :date => '2014-10-10', :time => '2000-01-01 14:00:00 UTC', :ticket_info => 'Free', :description => 'Join the Remembrance Scholars and Lockerbie Students as they lay roses in memory of the victims of Pan Am 103.', :category_id => Category.find_by_name('Other').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('Remembrance Scholars').id)
+e9.image = File.open('app/assets/images/rose.jpg')
+e9.save
+
+e10 = Event.new(:name => 'Afterhours', :location => 'Hendricks Chapel, Syracuse, NY', :date => '2013-12-05', :time => '2000-12-04 22:00:00 UTC', :ticket_info => 'Free', :description => 'Allow the members of Otto Tunes to serenade you one last time before the semester comes to a close.', :category_id => Category.find_by_name('Concert').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('Otto Tunes').id)
+e10.image = File.open('app/assets/images/afterhours.jpg')
+e10.save
+
+e11 = Event.new(:name => 'Orange Appeal Vocal Auditions', :location => 'Hendricks Chapel, Syracuse, NY', :date => '2014-01-27', :time => '2000-12-04 3:00:00 UTC', :ticket_info => 'Free', :description => 'Come audition to join on with the Orange Appeal team.', :category_id => Category.find_by_name('Concert').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('Orange Appeal').id)
+e11.image = File.open('app/assets/images/auditions.jpg')
+e11.save
+
+e12 = Event.new(:name => 'CitrusTV Programming Marathon', :location => 'TV', :date => '2013-12-06', :time => '2000-12-04 11:00:00 UTC', :ticket_info => 'Free', :description => 'Tune in as we air every new episode from each of our television shows in an end-of-the-year finale!', :category_id => Category.find_by_name('Other').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('CitrusTV').id)
+e12.image = File.open('app/assets/images/citrustv.png')
+e12.save
+
+e13 = Event.new(:name => 'Zamboni Revolution Improv Skits', :location => 'Maxwell Auditorium, Syracuse, NY', :date => '2013-12-06', :time => '2000-12-04 20:00:00 UTC', :ticket_info => 'Free', :description => 'Weve rehearsed all year to come up with the perfect, most hilarious unrehearsed improv skits. Come laugh at us.', :category_id => Category.find_by_name('Comedian').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('Zamboni Revolution').id)
+e13.image = File.open('app/assets/images/zamboni_revolution.jpg')
+e13.save
+
+e14 = Event.new(:name => 'Humor Whore Content Screening', :location => 'Herg Auditorium, Syracuse, NY', :date => '2013-12-05', :time => '2000-12-04 20:00:00 UTC', :ticket_info => 'Free', :description => "Screening of Humor Whore's semesters content, including some NOT YET released sketches! Get Excited!", :category_id => Category.find_by_name('Comedian').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('Humor Whore').id)
+e14.image = File.open('app/assets/images/hw_content_screening.jpg')
+e14.save
+
+e15 = Event.new(:name => 'Daily Orange Wrap Party', :location => '519 Walnut Ave, Syracuse, NY', :date => '2013-12-07', :time => '2000-12-04 22:30:00 UTC', :ticket_info => 'Invite Only', :description => 'Well team, we did it. After countless sleepless nights debating on whether or not to use a comma or a semicolon, weve put a wrap on this semesters printing. Now its time to celebrate.', :category_id => Category.find_by_name('Social').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('The Daily Orange').id)
+e15..image = File.open('app/assets/images/party.jpg')
+e15.save
+
+e16 = Event.new(:name => 'PledgeMusic Project Wrap', :location => 'North End Records, Syracuse, NY', :date => '2013-12-09', :time => '2000-12-04 12:00:00 UTC', :ticket_info => 'Free', :description => 'Help WERW and North End Records reach our vinyl sales goals and support local music in the process!', :category_id => Category.find_by_name('Other').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('WERW - Real College Radio').id)
+e16.image = File.open('app/assets/images/north_end_records.jpg')
+e16.save
+
+e17 = Event.new(:name => 'Z89 Wrap Party', :location => '374 Euclid Ave, Syracuse, NY', :date => '2013-12-06', :time => '2000-12-04 22:00:00 UTC', :ticket_info => 'Invite Only', :description => 'Lets celebrate a semester of awesome music and awesome broadcasts. That simple.', :category_id => Category.find_by_name('Social').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('Z89').id)
+e17.image = File.open('app/assets/images/party2.jpg')
+e17.save
+
+e18 = Event.new(:name => 'The Messiah', :location => 'St. Pauls Cathedral, Syracuse, NY', :date => '2013-12-08', :time => '2000-01-01 14:00:00 UTC', :ticket_info => 'Free', :description => 'Stage performance of the play "The Messiah"', :category_id => Category.find_by_name('Concert').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
+e18.image = File.open('app/assets/images/cathedral.jpg')
+e18.save
+
+e19 = Event.new(:name => 'Portuguese Language Table', :location => '352 Eggers Hall, Syracuse, NY', :date => '2013-12-06', :time => '2000-01-01 13:00:00 UTC', :ticket_info => 'Free', :description => 'An inside look at the shapings of the Portuguese language.', :category_id => Category.find_by_name('Academic/Information Session').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
+e19.image = File.open('app/assets/images/portugal_map.gif')
+e19.save
+
+e20 = Event.new(:name => 'Export Controls in a University Setting', :location => '2-202 Center for Science and Technology, Syracuse, NY', :date => '2013-12-12', :time => '2000-01-01 13:00:00 UTC', :ticket_info => 'Free and Open to the Public', :description => 'A conversation about university exports and their regulations.', :category_id => Category.find_by_name('Academic/Information Session').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
+e20.image = File.open('app/assets/images/syracuse.jpg')
+e20.save
+
+e21 = Event.new(:name => 'Soulful Sitdowns', :location => '204 Tolley Building, Syracuse, NY', :date => '2013-12-05', :time => '2000-01-01 19:00:00 UTC', :ticket_info => 'Free', :description => 'A reflective group conversation about spirituality', :category_id => Category.find_by_name('Mind/Body').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
+e21.image = File.open('app/assets/images/soulful_sitdowns.png')
+e21.save
+
+e22 = Event.new(:name => 'Fit Friday Fitness Class', :location => 'Flanagan Fitness Studio, Syracuse, NY', :date => '2013-12-06', :time => '2000-01-01 12:10:00 UTC', :ticket_info => 'Free and Open to the Public', :description => 'Come relieve some of that end of the semester stress with a good workout!', :category_id => Category.find_by_name('Mind/Body').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
+e22.image = File.open('app/assets/images/fitness.jpg')
+e22.save
+
+e23 = Event.new(:name => 'Spring Career Fair', :location => 'Goldstein Auditorium, Syracuse, NY', :date => '2014-02-11', :time => '2000-01-01 12:30:00 UTC', :ticket_info => 'Free', :description => 'Talk to employers from all different industries to try to find a job before the summer. A must attend for all seniors!', :category_id => Category.find_by_name('Academic/Information Session').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
+e23.image = File.open('app/assets/images/cuse_connect.png')
+e23.save
+
+e24 = Event.new(:name => 'Resumania', :location => '235 Schine Student Center, Syracuse, NY', :date => '2014-01-31', :time => '2000-01-01 11:10:00 UTC', :ticket_info => 'Free and Open to the Public', :description => 'Industry professionals critique your resume to provide experienced insight on which pieces of information are helpful and which are not.', :category_id => Category.find_by_name('Academic/Information Session').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
+e24.image = File.open('app/assets/images/cuse_connect.png')
+e24.save
+
+e25 = Event.new(:name => 'SU Orange v. Binghamton', :location => 'Carrier Dome, Syracuse, NY', :date => '2013-12-07', :time => '2000-01-01 19:00:00 UTC', :ticket_info => 'Box Office', :description => 'The SU Mens basketball team take on Binghamton in the last home game before winter break.', :category_id => Category.find_by_name('Sports').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
+e25.image = File.open('app/assets/images/binghamton.gif')
+e25.save
+
+e26 = Event.new(:name => 'SU Women Ice Hockey v. Lindenwood', :location => 'Tennity Ice Skating Pavilion, Syracuse, NY', :date => '2013-06-07', :time => '2000-01-01 19:00:00 UTC', :ticket_info => 'Box Office', :description => 'The womens ice hockey team take on Lindenwood.', :category_id => Category.find_by_name('Sports').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
+e26.image = File.open('app/assets/images/lindenwood.gif')
+e26.save
+
+e27 = Event.new(:name => 'SU Women Basketball v. Niagara', :location => 'Carrier Dome, Syracuse, NY', :date => '2013-12-19', :time => '2000-01-01 19:00:00 UTC', :ticket_info => 'Box Office', :description => 'The womens backetball team takes on Niagara.', :category_id => Category.find_by_name('Sports').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('University Union').id)
+e27.image = File.open('app/assets/images/niagara.gif')
+e27.save
 
