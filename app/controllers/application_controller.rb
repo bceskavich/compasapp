@@ -12,6 +12,18 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
   helper_method :signed_in?
 
+  protected
+
+  def confirm_logged_in
+      unless session[:user_id]
+          flash[:notice] = "Please log in or create an account to view these details!"
+          redirect_to :root
+          return false
+      else
+          return true
+      end
+  end
+
   private
 
   def current_user

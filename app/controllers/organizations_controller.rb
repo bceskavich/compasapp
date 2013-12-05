@@ -1,8 +1,10 @@
 class OrganizationsController < ApplicationController
+  before_filter :confirm_logged_in
+
   # GET /organizations
   # GET /organizations.json
   def index
-    @organizations = Organization.all.sort_by &:name
+    @organizations = Organization.page(params[:page]).per_page(15).order("name DESC")
 
     respond_to do |format|
       format.html # index.html.erb

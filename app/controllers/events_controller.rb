@@ -5,9 +5,9 @@ class EventsController < ApplicationController
   # GET /events.json
   def index
     if params[:past] == "show"
-      @events = Event.where('date < ?', Date.today).order("date DESC")
+      @events = Event.where('date < ?', Date.today).page(params[:page]).per_page(11).order("date DESC")
     else
-      @events = Event.where('date >= ?', Date.today).order(:date)
+      @events = Event.where('date >= ?', Date.today).page(params[:page]).per_page(11).order(:date)
       @events = @events.order(sort_column + " " + sort_direction) 
       @events = @events.where(filter_param => filter) if filter
     end
@@ -17,6 +17,8 @@ class EventsController < ApplicationController
       format.json { render json: @events }
     end
   end
+
+  before_filter :confirm_logged_in, :only => [:show, :new, :edit, :create, :update, :destroy, :attendees]
 
   # GET /events/1
   # GET /events/1.json
@@ -93,7 +95,7 @@ class EventsController < ApplicationController
   def attendees
     @title = "Attendees"
     @event = Event.find(params[:id])
-    @attendances = @event.attendances
+    @attendances = @event.attendances.page(params[:page]).per_page(30)
     render 'show_follow'
   end
 
