@@ -294,3 +294,158 @@ e27 = Event.new(:name => 'SU Women Basketball v. Niagara', :location => 'Carrier
 e27.image = File.open('app/assets/images/niagara.gif')
 e27.save
 
+### Attendances Generation ###
+
+def random_uid
+  u_max = User.last.id
+  u_min = User.first.id
+  (rand * (u_max + 1 - u_min)).floor + u_min
+end
+
+def attending?(event, user)
+    a = Attendance.where("attended_event_id = ? AND attendee_id = ?", event, user)
+    if a.empty?
+      false
+    else
+      true
+    end
+end
+
+Attendance.create(:attended_event_id => Event.find_by_name('Hudson Mohawke').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Hudson Mohawke').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Hudson Mohawke').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Hudson Mohawke').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Hudson Mohawke').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Hudson Mohawke').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Hudson Mohawke').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Hudson Mohawke').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Hudson Mohawke').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Hudson Mohawke').id, random_uid)
+
+Attendance.create(:attended_event_id => Event.find_by_name('20 Watts Launch Party').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('20 Watts Launch Party').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('20 Watts Launch Party').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('20 Watts Launch Party').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('20 Watts Launch Party').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('20 Watts Launch Party').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('20 Watts Launch Party').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('20 Watts Launch Party').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('20 Watts Launch Party').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('20 Watts Launch Party').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('20 Watts Launch Party').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('20 Watts Launch Party').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('20 Watts Launch Party').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('20 Watts Launch Party').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('20 Watts Launch Party').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('20 Watts Launch Party').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('20 Watts Launch Party').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('20 Watts Launch Party').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('20 Watts Launch Party').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('20 Watts Launch Party').id, random_uid)
+
+Attendance.create(:attended_event_id => Event.find_by_name('Afterhours').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Afterhours').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Afterhours').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Afterhours').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Afterhours').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Afterhours').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Afterhours').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Afterhours').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Afterhours').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Afterhours').id, random_uid)
+
+Attendance.create(:attended_event_id => Event.find_by_name('Humor Whore Content Screening').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Humor Whore Content Screening').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Humor Whore Content Screening').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Humor Whore Content Screening').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Humor Whore Content Screening').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Humor Whore Content Screening').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Humor Whore Content Screening').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Humor Whore Content Screening').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Humor Whore Content Screening').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Humor Whore Content Screening').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Humor Whore Content Screening').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Humor Whore Content Screening').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Humor Whore Content Screening').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Humor Whore Content Screening').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Humor Whore Content Screening').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Humor Whore Content Screening').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Humor Whore Content Screening').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Humor Whore Content Screening').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Humor Whore Content Screening').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Humor Whore Content Screening').id, random_uid)
+
+Attendance.create(:attended_event_id => Event.find_by_name('Soulful Sitdowns').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Soulful Sitdowns').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Soulful Sitdowns').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Soulful Sitdowns').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Soulful Sitdowns').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Soulful Sitdowns').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Soulful Sitdowns').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Soulful Sitdowns').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Soulful Sitdowns').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Soulful Sitdowns').id, random_uid)
+
+Attendance.create(:attended_event_id => Event.find_by_name('Soulful Sitdowns').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Soulful Sitdowns').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Soulful Sitdowns').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('Soulful Sitdowns').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Soulful Sitdowns').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Soulful Sitdowns').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Soulful Sitdowns').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Soulful Sitdowns').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Soulful Sitdowns').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Soulful Sitdowns').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Soulful Sitdowns').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('Soulful Sitdowns').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+
+
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+
+
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+Attendance.create(:attended_event_id => Event.find_by_name('').id, :attendee_id => random_uid) unless attending?(Event.find_by_name('').id, random_uid)
+
+
+
+
+
+
