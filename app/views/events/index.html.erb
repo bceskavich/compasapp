@@ -65,7 +65,11 @@
       <div class="row event_image">
       <%= link_to event do %>
         <div class="overlay"></div>
-        <%= image_tag event.image_url %>
+        <% if event.image? %>
+          <%= image_tag event.image_url %>
+        <% else  %>
+          <img src="/uploads/noimage.jpg" />
+        <% end %>
       <%end %>
        </div>
       <div class="row">

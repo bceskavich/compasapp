@@ -243,7 +243,7 @@ e14.image = File.open('app/assets/images/hw_content_screening.jpg')
 e14.save
 
 e15 = Event.new(:name => 'Daily Orange Wrap Party', :location => '519 Walnut Ave, Syracuse, NY', :date => '2013-12-07', :time => '2000-12-04 22:30:00 UTC', :ticket_info => 'Invite Only', :description => 'Well team, we did it. After countless sleepless nights debating on whether or not to use a comma or a semicolon, weve put a wrap on this semesters printing. Now its time to celebrate.', :category_id => Category.find_by_name('Social').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('The Daily Orange').id)
-e15..image = File.open('app/assets/images/party.jpg')
+e15..image = File.open('app/assets/images/party2.jpg')
 e15.save
 
 e16 = Event.new(:name => 'PledgeMusic Project Wrap', :location => 'North End Records, Syracuse, NY', :date => '2013-12-09', :time => '2000-12-04 12:00:00 UTC', :ticket_info => 'Free', :description => 'Help WERW and North End Records reach our vinyl sales goals and support local music in the process!', :category_id => Category.find_by_name('Other').id, :user_id => User.find_by_user_name('bceskavich').id, :organization_id => Organization.find_by_name('WERW - Real College Radio').id)
