@@ -28,7 +28,7 @@
             <% user = User.find(session[:user_id]) %>
             Welcome <%= user.first_name %>!
         <% else %>
-            <%= link_to "Sign in with Facebook", "/auth/facebook" %>
+            <%= link_to "Sign in with Facebook", "/auth/facebook", :id => 'anchor' %>
         <% end %>
         </div>
 
