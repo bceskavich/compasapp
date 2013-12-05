@@ -18,6 +18,8 @@ class EventsController < ApplicationController
     end
   end
 
+  before_filter :confirm_logged_in, :only => [:show, :new, :edit, :create, :update, :destroy, :attendees]
+
   # GET /events/1
   # GET /events/1.json
   def show

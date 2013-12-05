@@ -4,6 +4,9 @@ universal
 
 #link:hover {background-color:#fff; text-decoration:underline;}
 
+#anchor { color:#0d95a3; }
+#anchor:hover { background:none; text-decoration: underline; }
+
 /*========================================================================================
 header and nav
 =========================================================================================== */
@@ -46,8 +49,11 @@ header nav ul {float:right;}
 
 header a { color:#fff; float:left;}
 
-
 header a:visited { color:#fff;}
+
+.alert-box {
+    margin-top:20px;
+}
 
 /*========================================================================================
 login page

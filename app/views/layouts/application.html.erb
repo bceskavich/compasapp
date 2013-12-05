@@ -45,6 +45,15 @@
 
 </header>
 
+<div class="row">
+  <div class="large-12 columns">
+    <% if flash[:notice] %>
+      <div data-alert class="alert-box">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
+</div>
+
 <%= yield %>
 
 

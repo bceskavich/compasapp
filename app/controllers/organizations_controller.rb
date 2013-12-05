@@ -1,4 +1,6 @@
 class OrganizationsController < ApplicationController
+  before_filter :confirm_logged_in
+
   # GET /organizations
   # GET /organizations.json
   def index
