@@ -68,12 +68,8 @@ login page
 .field {width:40%;}
 
 #login {
-    background-image: url('/assets/juice_jam.jpg');
-    background-size:cover;
-    background-repeat: no-repeat;
-    height:1000px;
+    max-height:1000px;
     margin-top:0;
-    background-color:#444;
 }
 
 #login h1 {
