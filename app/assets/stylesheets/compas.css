@@ -141,7 +141,9 @@ events index
 
 #events_index ul {margin: 5px auto; }
 
-#events_index ul li{list-style:none; float:left; padding:1% 1.5%; font-size:1.2em; }
+#events_index ul li{list-style:none; float:left; padding:1% 1.5%; font-size:1.2em; border-right:1.5px solid #0d95a3; }
+
+#events_index ul li:last-child { border-right:none; }
 
 #events_index ul a { color:#0d95a3; }
 #events_index ul a:hover { background:none; text-decoration: underline; }
@@ -171,7 +173,7 @@ events index
     padding:5px;
 }
 
-#events_index .event_listing {padding-bottom:20px; padding:1.8%}
+#events_index .event_listing {padding-bottom:20px; padding:1.8%;}
 
 #events_index .new_block {
     height: 220px;
@@ -213,6 +215,7 @@ events index
 
 #events_index .event_image:hover .overlay {
     opacity:.5;  }
+
 
 
 

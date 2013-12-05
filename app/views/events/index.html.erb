@@ -1,6 +1,18 @@
 <div id="events_index" class="row">
 <div class="large-12 columns">
-  <div class="row"><h1>Upcoming Events</h1></div>
+  <div class="row"><h1>
+    <% if params[:org_id] %>
+      <% org = Organization.find(params[:org_id]) %>
+      Events By <%= org.name %>
+    <% elsif params[:cat_id] %>
+      <% cat = Category.find(params[:cat_id]) %>
+      All <%= cat.name %>s
+    <% elsif params[:past] %>
+        Past Events
+    <% else %>
+      Upcoming Events
+    <% end %>
+  </h1></div>
   <div class="row">
     <div class="large-5 large-centered columns sort">
         <ul>
@@ -46,6 +58,7 @@
     </div>
     <% end %>
   <% end %>
+<div class="row">
 <% @events.each do |event| %>
 
     <div class="large-4 columns event_listing">
@@ -67,6 +80,7 @@
     </div>
 
 <% end %>
+</div>
 
 <div class="large-12 columns">
   <%= will_paginate @events %>
