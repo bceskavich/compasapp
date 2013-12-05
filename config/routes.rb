@@ -34,7 +34,7 @@ Compas::Application.routes.draw do
   get "/pages/*id" => 'pages#show', :as => :page, :format => false
 
 # if routing the root path, update for your controller
-  root :to => 'pages#show', :id => 'about'
+  root :to => 'events#index'
 
 
   # The priority is based upon order of creation:
