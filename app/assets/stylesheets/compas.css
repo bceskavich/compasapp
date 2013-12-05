@@ -208,7 +208,7 @@ events index
     padding:5px;
 }
 
-#events_index .event_listing {padding-bottom:20px; padding:1.8%; min-height:330px;}
+#events_index .event_listing {padding-bottom:20px; padding:1.8%; min-height:330px; max-height:330px;}
 
 #events_index .new_block {
     height: 220px;
