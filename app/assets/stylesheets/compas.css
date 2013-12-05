@@ -345,21 +345,23 @@ organization index
     font-size:3em;
     font-weight:bold;
     margin-bottom:40px;
+    margin-left:1.5%;
 }
 
-#org_index h2  { font-family:'Open Sans', sans-serif; font-size:1em;}
+#org_index h2  { font-family:'Open Sans', sans-serif; font-size:1.5em;}
 
 #org_index h2 a { color:#0d95a3; }
 
 #org_index .new_block {
-    height: 66px;
+    height: 90px;
     background-color: #efefef;
     color: #fff;
     font-size: 3em;
-    line-height: 1.5em;
+    line-height: 2em;
     text-align: center;
-    margin-left: -12px;
     padding-left: 5px;
+    width: 22%;
+    margin-left: 2%;
 }
 
 #org_index .new_block:hover a {color: #fff;}
@@ -368,10 +370,10 @@ organization index
 
 #org_index .new_block a:hover {background-color: #7dbac2;}
 
-#org_index .org_listing { float:left; margin-bottom:30px; min-height:250px; padding:20px; overflow: hidden;}
+#org_index .org_listing { float:left; min-height:140px; padding:20px; overflow: hidden;}
 #org_index .org_listing:last-of-type { float:right; }
 
-#org_index .org_listing .event_pic { padding-right:.5%; }
+#org_index .org_listing .event_pic { padding-right:.8%; max-height:100px; overflow:hidden;}
 
 #org_index {padding-bottom:300px;}
 
