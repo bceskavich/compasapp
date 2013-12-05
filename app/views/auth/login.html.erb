@@ -12,9 +12,9 @@
   <h1>Log In</h1>
 
 <% if flash[:error] %>
-	<div id="error_explanation">
-		<%= flash[:error] %>
-	</div>
+	<div data-alert class="alert-box">
+        <%= flash[:error] %>
+      </div>
 <% end %>
 
 <%= form_tag do %>
