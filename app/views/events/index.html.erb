@@ -14,7 +14,7 @@
     <% end %>
   </h1></div>
   <div class="row">
-    <div class="large-5 large-centered columns sort">
+    <div class="large-6 large-centered columns sort">
         <ul id="sort_options">
             <li><%= sortable "date", "All Upcoming" %></li>
             <li>
@@ -65,7 +65,11 @@
       <div class="row event_image">
       <%= link_to event do %>
         <div class="overlay"></div>
-        <%= image_tag event.image_url %>
+        <% if event.image? %>
+          <%= image_tag event.image_url %>
+        <% else  %>
+          <img src="/uploads/noimage.jpg" />
+        <% end %>
       <%end %>
        </div>
       <div class="row">
