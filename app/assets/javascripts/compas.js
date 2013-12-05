@@ -7,5 +7,13 @@
  */
 
 $(function(){
-
+    var navHeight = 60;
+    var contentHeight = $("body").height();
+    var windowHeight = $(window).height();
+    var footerHeight = 40;
+    if((navHeight+contentHeight-footerHeight) <= windowHeight){
+        $("footer").addClass("stickybar");
+    }else{
+        $("footer").removeClass("stickybar");
+    }
 });
