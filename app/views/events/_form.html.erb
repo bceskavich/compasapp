@@ -81,9 +81,15 @@
             <%= f.file_field :image %>
         </div>
       </div>
-      <div class="row">
-        <%= f.submit 'Create Event', :id=>'form_submit' %>
-      </div>
-    <% end %>
+    <div class="row">
+      <% url = request.fullpath %>
+      <% url_check = url.scan('new') %>
+      <% if url_check.empty? %>
+          <%= f.submit 'Save Changes', :id=>'form_submit' %>
+      <% else %>
+           <%= f.submit 'Create Event', :id=>'form_submit' %>
+      <%end %>
+    </div>
+  <% end %>
   </div>
 </div>
