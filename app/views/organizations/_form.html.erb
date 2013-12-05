@@ -36,7 +36,13 @@
     <%= f.text_field :twitter_handle, :placeholder => 'twitter handle' %>
   </div>
   <div class="row">
-    <%= f.submit 'Create Organization', :id=> 'form_submit_org' %>
+    <% url = request.fullpath %>
+    <% url_check = url.scan('new') %>
+    <% if url_check.empty? %>
+        <%= f.submit 'Save Changes', :id=>'form_submit' %>
+    <% else %>
+        <%= f.submit 'Create Org', :id=>'form_submit' %>
+    <%end %>
   </div>
 <% end %>
 </div>

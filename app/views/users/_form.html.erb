@@ -44,7 +44,13 @@
     </div>
   </div>
   <div class="actions row">
-    <%= f.submit 'Sign Up', :id=>'form_submit' %>
+    <% url = request.fullpath %>
+    <% url_check = url.scan('new') %>
+    <% if url_check.empty? %>
+        <%= f.submit 'Save Changes', :id=>'form_submit' %>
+    <% else %>
+        <%= f.submit 'Sign Up', :id=>'form_submit' %>
+    <%end %>
   </div>
 <% end %>
 </div>
