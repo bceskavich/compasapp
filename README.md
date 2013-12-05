@@ -2,7 +2,7 @@
 
 Compas is an event aggregation system for college campuses. The webapp is built on Rails and is part of a class project for IST 488 at Syracuse University.
 
-Check back for more as this project progresses.
+Submitted to the [SU App Challenge 2013](http://appchallenge.syr.edu/)
 
 Designed with love by:
 
@@ -12,17 +12,11 @@ Designed with love by:
 
 ## Current Features
 
-Compas is currently in a very early stage of development. We have worked to develop the basic scaffolding, which includes the following:
+Compas makes it easy for college students to find events on campus. Users can enjoy some of the following features:
 
-*	Schema for Users, Events, Organizations, and Categories
-*	Basic auth functions, which are currently required to access the rest of the app
-*	A seed file that will generate test data for the created schema
-
-## To Use
-
-Clone this version (via https://github.com/bceskavich/compas.git), run bundle install, migrate and seed the databases. This should set up the service with all the data needed to test and build further. Use the suggested login credentials below:
-
-_Username_: johndoe | _Password_: SU2orange!
+*	Interactive event listings that can be filtered by category, date, and organization
+*	Event attendances and lists
+*	Social interactivity - event commenting and rating a core features of the app
 
 ## Next Steps
 
