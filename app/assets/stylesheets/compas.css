@@ -208,7 +208,7 @@ events index
     padding:5px;
 }
 
-#events_index .event_listing {padding-bottom:20px; padding:1.8%;}
+#events_index .event_listing {padding-bottom:20px; padding:1.8%; min-height:330px;}
 
 #events_index .new_block {
     height: 220px;
@@ -218,7 +218,7 @@ events index
     line-height: 2.5em;
     text-align: center;
     max-width: 347px;
-    margin-left: -12px;
+    margin-left: -27px;
 }
 
 #events_index .new_block a {color: #fff; }
@@ -227,7 +227,8 @@ events index
 #events_index .new_block:hover {background-color: #7dbac2;}
 #events_index .new_block a:hover {background-color: #7dbac2;}
 
-#events_index .event_image {max-height:220px; overflow:hidden; }
+#events_index .event_image {max-height:220px; width:100%; overflow:hidden; width:100%; }
+#events_index .event_image img { width:100%; }
 
 
 
@@ -367,9 +368,10 @@ organization index
 
 #org_index .new_block a:hover {background-color: #7dbac2;}
 
-#org_index .org_listing { float:left; margin-bottom:30px;}
+#org_index .org_listing { float:left; margin-bottom:30px; min-height:250px; padding:20px; overflow: hidden;}
+#org_index .org_listing:last-of-type { float:right; }
 
-#org_index .org_listing .event_pic { padding-right:.5%;}
+#org_index .org_listing .event_pic { padding-right:.5%; }
 
 #org_index {padding-bottom:300px;}
 

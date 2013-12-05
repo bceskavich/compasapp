@@ -4,7 +4,7 @@ class OrganizationsController < ApplicationController
   # GET /organizations
   # GET /organizations.json
   def index
-    @organizations = Organization.page(params[:page]).per_page(15).order("name DESC")
+    @organizations = Organization.page(params[:page]).per_page(9).order("name DESC")
 
     respond_to do |format|
       format.html # index.html.erb
