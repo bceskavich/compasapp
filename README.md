@@ -18,16 +18,3 @@ Compas makes it easy for college students to find events on campus. Users can en
 *	Event attendances and lists
 *	Social interactivity - event commenting and rating a core features of the app
 
-## Next Steps
-
-Compas has a long way to go, but here are the intended next steps:
-
-1. Finalize the system structure, which includes
-
-	*	Established relationships via bridge tables and many-to-one relationships
-	*	Structure that links item creation to these connections (i.e. for Events/Orgs, Users/Orgs, Events/Category, etc.)
-	*	Implement Omniauth or some other social authentication plugin for auth replacement
-
-2. Establish more detailed relationships for users to navigate through
-3. Implement content-based items (Ex. Orgs' popularity indices derived from event rating)
-4. Implement the frontend design
