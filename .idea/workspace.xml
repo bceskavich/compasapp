@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="565a6289-00e9-4aed-ac03-f3b6b8f8b151" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/events/index.html.erb" afterPath="$PROJECT_DIR$/app/views/events/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="compasapp.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1386269608058" ignored="false" />
+    <file path="/Dummy.txt" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1388264289457" ignored="false" />
     <file path="/show.html.erb" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1386211627876" ignored="false" />
     <file path="/compas.css" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1386269259466" ignored="false" />
     <file path="/compas.js" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1386231017321" ignored="false" />
@@ -36,7 +38,7 @@
       <file leaf-file-name="compas.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/compas.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="347" column="21" selection-start="7975" selection-end="7975" vertical-scroll-proportion="0.0">
+            <state line="347" column="21" selection-start="8009" selection-end="8009" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -99,7 +101,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/events/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="23" selection-start="471" selection-end="471" vertical-scroll-proportion="0.4355717">
+            <state line="20" column="75" selection-start="643" selection-end="643" vertical-scroll-proportion="0.13611615">
               <folding />
             </state>
           </provider>
@@ -160,7 +162,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
+    <option name="x" value="16" />
     <option name="y" value="22" />
     <option name="width" value="1260" />
     <option name="height" value="723" />
@@ -191,7 +193,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -401,6 +402,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -646,14 +648,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="22" width="1260" height="723" extended-state="0" />
+    <frame x="16" y="22" width="1260" height="723" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28171334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2866557" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -731,9 +733,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/log/development.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106074" column="67" selection-start="4930591" selection-end="4930591" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="106074" column="67" selection-start="4930591" selection-end="4930591" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
@@ -760,9 +760,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="12" selection-start="1659" selection-end="1659" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="52" column="12" selection-start="1659" selection-end="1659" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/auth/login.html.erb">
@@ -823,14 +821,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/compas.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="347" column="21" selection-start="7975" selection-end="7975" vertical-scroll-proportion="0.0">
+        <state line="347" column="21" selection-start="8009" selection-end="8009" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/events/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="23" selection-start="471" selection-end="471" vertical-scroll-proportion="0.4355717">
+        <state line="20" column="75" selection-start="643" selection-end="643" vertical-scroll-proportion="0.13611615">
           <folding />
         </state>
       </provider>
