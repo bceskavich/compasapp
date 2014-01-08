@@ -399,7 +399,9 @@ organization show
     font-size:2em;
 }
 
-#org_show .attended_image {max-height:170px;overflow:hidden;}
+#org_show .attended_image {max-height:170px;overflow:hidden; }
+
+#org_show .attended_image img {width:100%;}
 
 #org_show .attended_event {float:left; margin-right:2%; margin-bottom:25px;}
 
@@ -409,7 +411,8 @@ organization show
     font-family:'Open Sans', sans-serif;
 }
 
-#org_show .attended_event h2 {line-height: 12px;}
+#org_show .attended_event h2 {line-height: 14px;}
+
 
 #org_show .data { padding-left:5%; }
 
