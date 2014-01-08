@@ -72,6 +72,7 @@ ActiveRecord::Schema.define(:version => 20131127170535931) do
     t.string   "image"
     t.integer  "user_id"
     t.string   "twitter_handle"
+    t.string   "fb_uri"
   end
 
   create_table "rates", :force => true do |t|
@@ -115,6 +116,7 @@ ActiveRecord::Schema.define(:version => 20131127170535931) do
     t.string   "uid"
     t.string   "name"
     t.string   "location"
+    t.string   "token"
   end
 
 end

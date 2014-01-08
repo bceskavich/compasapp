@@ -29,6 +29,7 @@ class OrganizationsController < ApplicationController
     @organization = Organization.new
     @organization.user_id = session[:user_id]
 
+
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @organization }
@@ -44,7 +45,7 @@ class OrganizationsController < ApplicationController
   # POST /organizations.json
   def create
     @organization = Organization.new(params[:organization])
-
+    @organization.create_fb_events
     respond_to do |format|
       if @organization.save
         format.html { redirect_to @organization, notice: 'Organization was successfully created.' }

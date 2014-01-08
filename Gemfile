@@ -15,6 +15,8 @@ end
 
 gem 'omniauth-facebook'
 
+gem 'fb_graph'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -41,6 +43,8 @@ gem 'high_voltage'
 gem "arel"
 
 gem 'acts_as_commentable', '3.0.1'
+
+gem 'ransack'
 
 
 # To use ActiveModel has_secure_password
