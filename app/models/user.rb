@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   attr_accessible :first_name, :last_name, :school, :uid, :provider, :name
   attr_accessible :location
   attr_accessible :password, :password_confirmation
+  attr_accessible :token
 
   attr_accessible :user_name
   attr_accessible :image
@@ -19,6 +20,7 @@ class User < ActiveRecord::Base
       user.user_name = auth["info"]["nickname"]
       user.location = auth["info"]["location"]
       user.remote_image_url = auth["info"]["image"]
+      user.token = auth["credentials"]["token"]
     end
   end
 

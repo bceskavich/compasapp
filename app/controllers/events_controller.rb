@@ -4,19 +4,27 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    if params[:past] == "show"
-      @events = Event.where('date < ?', Date.today).page(params[:page]).per_page(11).order("date DESC")
-    else
+
+
+   if params[:past] == "show"
+     @events = Event.where('date < ?', Date.today).page(params[:page]).per_page(11).order("date DESC")
+   else
       @events = Event.where('date >= ?', Date.today).page(params[:page]).per_page(11).order(:date)
-      @events = @events.order(sort_column + " " + sort_direction) 
+      @events = @events.order(sort_column + " " + sort_direction)
       @events = @events.where(filter_param => filter) if filter
-    end
+   end
+
+
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @events }
     end
+
+
   end
+
+
 
   before_filter :confirm_logged_in, :only => [:show, :new, :edit, :create, :update, :destroy, :attendees]
 

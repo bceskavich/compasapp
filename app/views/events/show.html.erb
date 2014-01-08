@@ -13,10 +13,23 @@
     </div>
     <div class="large-6 columns data">
         <div class="row">
-          <h1><%= @event.name %></h1>
+          <h1><%= @event.name %></h1> </br>
+          <!-- AddThis Button BEGIN -->
+          <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+            <a class="addthis_button_preferred_1"></a>
+            <a class="addthis_button_preferred_2"></a>
+            <a class="addthis_button_preferred_3"></a>
+            <a class="addthis_button_preferred_4"></a>
+            <a class="addthis_button_compact"></a>
+            <a class="addthis_counter addthis_bubble_style"></a>
+          </div>
+          <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+          <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52c9938d15f9aa8b"></script>
+          <!-- AddThis Button END -->
+          </br>
         </div>
         <div class="row">
-            <h2><%= @event.time.strftime("%l:%M%P") %>&nbsp;--&nbsp;<%= @event.date.strftime("%B %e, %Y") %></h2>
+
         </div>
         <div class="row">
           <% if future_event? %>
