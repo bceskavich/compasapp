@@ -1,7 +1,9 @@
 <div id="events_index" class="row">
 
 
+
 <div class="large-12 columns">
+
   <div class="row"><h1>
     <% if params[:org_id] %>
       <% org = Organization.find(params[:org_id]) %>
@@ -89,7 +91,7 @@
 </div>
 
 <div class="large-12 columns">
-  <%= will_paginate @events %>
+  <!-- will_paginate @events -->
 </div>
 
 </div>
