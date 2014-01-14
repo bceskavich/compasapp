@@ -2,214 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="565a6289-00e9-4aed-ac03-f3b6b8f8b151" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/411/1170657_592037274182400_1528832566_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/419/1170657_592037274182400_1528832566_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/421/1170657_592037274182400_1528832566_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/425/1170657_592037274182400_1528832566_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/427/1170657_592037274182400_1528832566_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/429/1170657_592037274182400_1528832566_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/431/1170657_592037274182400_1528832566_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/433/1170657_592037274182400_1528832566_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/435/1170657_592037274182400_1528832566_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/437/1170657_592037274182400_1528832566_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/439/1170657_592037274182400_1528832566_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/441/1170657_592037274182400_1528832566_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/443/1170657_592037274182400_1528832566_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/420/1374894_468522126595006_1239300568_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/422/1374894_468522126595006_1239300568_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/426/1374894_468522126595006_1239300568_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/428/1374894_468522126595006_1239300568_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/430/1374894_468522126595006_1239300568_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/432/1374894_468522126595006_1239300568_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/434/1374894_468522126595006_1239300568_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/436/1374894_468522126595006_1239300568_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/438/1374894_468522126595006_1239300568_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/440/1374894_468522126595006_1239300568_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/442/1374894_468522126595006_1239300568_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/444/1374894_468522126595006_1239300568_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/412/1374894_468522126595006_1239300568_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/416/1471165_555832524504327_552851949_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/418/1471165_555832524504327_552851949_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/tmp/1388362065-4403-3898/49215_1369503711_711991558_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/user/image/556/49215_1369503711_711991558_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/423/5uwzdFmIMKQ.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/424/5uwzdFmIMKQ.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/445/5uwzdFmIMKQ.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/446/5uwzdFmIMKQ.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/415/994391_483515935096033_1993915282_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/image/417/994391_483515935096033_1993915282_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20131229174422_add_fb_uri_to_users.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20131229200243_remove_fb_uri_from_users.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20131229200340_add_fb_uri_to_organizations.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20131230000309_add_token_to_user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/535/1.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/535/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/536/1.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/536/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/581/1.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/581/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/582/1.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/582/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/553/10.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/553/10.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/554/10.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/554/10.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/599/10.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/599/10.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/600/10.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/600/10.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/537/2.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/537/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/538/2.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/538/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/583/2.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/583/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/584/2.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/584/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/310/20watts.png" afterPath="$PROJECT_DIR$/public/uploads/organization/image/310/20watts.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/340/20watts.png" afterPath="$PROJECT_DIR$/public/uploads/organization/image/340/20watts.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/539/3.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/539/3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/540/3.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/540/3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/585/3.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/585/3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/586/3.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/586/3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/541/4.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/541/4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/542/4.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/542/4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/587/4.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/587/4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/588/4.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/588/4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/543/5.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/543/5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/544/5.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/544/5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/589/5.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/589/5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/590/5.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/590/5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/545/6.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/545/6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/546/6.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/546/6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/591/6.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/591/6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/592/6.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/592/6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/547/7.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/547/7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/548/7.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/548/7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/593/7.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/593/7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/594/7.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/594/7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/549/8.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/549/8.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/550/8.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/550/8.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/595/8.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/595/8.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/596/8.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/596/8.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/551/9.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/551/9.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/552/9.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/552/9.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/597/9.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/597/9.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/598/9.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/598/9.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/353/activeminds.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/353/activeminds.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/407/activeminds.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/407/activeminds.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/308/activeminds.jpg" afterPath="$PROJECT_DIR$/public/uploads/organization/image/308/activeminds.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/338/activeminds.jpg" afterPath="$PROJECT_DIR$/public/uploads/organization/image/338/activeminds.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/355/afterhours.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/355/afterhours.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/409/afterhours.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/409/afterhours.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/356/auditions.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/356/auditions.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/410/auditions.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/410/auditions.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/370/binghamton.gif" afterPath="$PROJECT_DIR$/public/uploads/event/image/370/binghamton.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/424/binghamton.gif" afterPath="$PROJECT_DIR$/public/uploads/event/image/424/binghamton.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/363/cathedral.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/363/cathedral.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/417/cathedral.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/417/cathedral.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/348/chance.png" afterPath="$PROJECT_DIR$/public/uploads/event/image/348/chance.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/402/chance.png" afterPath="$PROJECT_DIR$/public/uploads/event/image/402/chance.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/357/citrustv.png" afterPath="$PROJECT_DIR$/public/uploads/event/image/357/citrustv.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/411/citrustv.png" afterPath="$PROJECT_DIR$/public/uploads/event/image/411/citrustv.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/315/citrustv.png" afterPath="$PROJECT_DIR$/public/uploads/organization/image/315/citrustv.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/345/citrustv.png" afterPath="$PROJECT_DIR$/public/uploads/organization/image/345/citrustv.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/368/cuse_connect.png" afterPath="$PROJECT_DIR$/public/uploads/event/image/368/cuse_connect.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/369/cuse_connect.png" afterPath="$PROJECT_DIR$/public/uploads/event/image/369/cuse_connect.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/422/cuse_connect.png" afterPath="$PROJECT_DIR$/public/uploads/event/image/422/cuse_connect.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/423/cuse_connect.png" afterPath="$PROJECT_DIR$/public/uploads/event/image/423/cuse_connect.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/318/daily_orange.jpg" afterPath="$PROJECT_DIR$/public/uploads/organization/image/318/daily_orange.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/348/daily_orange.jpg" afterPath="$PROJECT_DIR$/public/uploads/organization/image/348/daily_orange.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/367/fitness.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/367/fitness.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/421/fitness.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/421/fitness.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/352/funk_n_waffles.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/352/funk_n_waffles.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/406/funk_n_waffles.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/406/funk_n_waffles.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/314/groove.jpg" afterPath="$PROJECT_DIR$/public/uploads/organization/image/314/groove.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/344/groove.jpg" afterPath="$PROJECT_DIR$/public/uploads/organization/image/344/groove.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/350/hudmo.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/350/hudmo.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/404/hudmo.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/404/hudmo.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/347/hudson_mohawk.png" afterPath="$PROJECT_DIR$/public/uploads/event/image/347/hudson_mohawk.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/401/hudson_mohawk.png" afterPath="$PROJECT_DIR$/public/uploads/event/image/401/hudson_mohawk.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/317/humor_whore.jpg" afterPath="$PROJECT_DIR$/public/uploads/organization/image/317/humor_whore.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/347/humor_whore.jpg" afterPath="$PROJECT_DIR$/public/uploads/organization/image/347/humor_whore.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/359/hw_content_screening.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/359/hw_content_screening.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/413/hw_content_screening.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/413/hw_content_screening.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/349/juice_jam.png" afterPath="$PROJECT_DIR$/public/uploads/event/image/349/juice_jam.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/351/juice_jam.png" afterPath="$PROJECT_DIR$/public/uploads/event/image/351/juice_jam.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/403/juice_jam.png" afterPath="$PROJECT_DIR$/public/uploads/event/image/403/juice_jam.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/405/juice_jam.png" afterPath="$PROJECT_DIR$/public/uploads/event/image/405/juice_jam.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/533/lggorman.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/533/lggorman.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/579/lggorman.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/579/lggorman.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/371/lindenwood.gif" afterPath="$PROJECT_DIR$/public/uploads/event/image/371/lindenwood.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/425/lindenwood.gif" afterPath="$PROJECT_DIR$/public/uploads/event/image/425/lindenwood.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/346/macklemore.png" afterPath="$PROJECT_DIR$/public/uploads/event/image/346/macklemore.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/400/macklemore.png" afterPath="$PROJECT_DIR$/public/uploads/event/image/400/macklemore.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/372/niagara.gif" afterPath="$PROJECT_DIR$/public/uploads/event/image/372/niagara.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/426/niagara.gif" afterPath="$PROJECT_DIR$/public/uploads/event/image/426/niagara.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/361/north_end_records.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/361/north_end_records.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/415/north_end_records.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/415/north_end_records.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/312/oappeal.jpg" afterPath="$PROJECT_DIR$/public/uploads/organization/image/312/oappeal.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/342/oappeal.jpg" afterPath="$PROJECT_DIR$/public/uploads/organization/image/342/oappeal.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/311/ottotunes.jpg" afterPath="$PROJECT_DIR$/public/uploads/organization/image/311/ottotunes.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/341/ottotunes.jpg" afterPath="$PROJECT_DIR$/public/uploads/organization/image/341/ottotunes.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/313/oycap.jpg" afterPath="$PROJECT_DIR$/public/uploads/organization/image/313/oycap.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/343/oycap.jpg" afterPath="$PROJECT_DIR$/public/uploads/organization/image/343/oycap.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/362/party2.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/362/party2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/416/party2.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/416/party2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/364/portugal_map.gif" afterPath="$PROJECT_DIR$/public/uploads/event/image/364/portugal_map.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/418/portugal_map.gif" afterPath="$PROJECT_DIR$/public/uploads/event/image/418/portugal_map.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/532/propic.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/532/propic.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/578/propic.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/578/propic.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/309/remembrance.jpg" afterPath="$PROJECT_DIR$/public/uploads/organization/image/309/remembrance.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/339/remembrance.jpg" afterPath="$PROJECT_DIR$/public/uploads/organization/image/339/remembrance.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/354/rose.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/354/rose.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/408/rose.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/408/rose.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/366/soulful_sitdowns.png" afterPath="$PROJECT_DIR$/public/uploads/event/image/366/soulful_sitdowns.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/420/soulful_sitdowns.png" afterPath="$PROJECT_DIR$/public/uploads/event/image/420/soulful_sitdowns.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/365/syracuse.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/365/syracuse.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/419/syracuse.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/419/syracuse.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/534/tcharles.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/534/tcharles.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/user/image/580/tcharles.jpg" afterPath="$PROJECT_DIR$/public/uploads/user/image/580/tcharles.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/307/uu_insignia.jpg" afterPath="$PROJECT_DIR$/public/uploads/organization/image/307/uu_insignia.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/337/uu_insignia.jpg" afterPath="$PROJECT_DIR$/public/uploads/organization/image/337/uu_insignia.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/319/werw.jpg" afterPath="$PROJECT_DIR$/public/uploads/organization/image/319/werw.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/349/werw.jpg" afterPath="$PROJECT_DIR$/public/uploads/organization/image/349/werw.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/320/z89.jpg" afterPath="$PROJECT_DIR$/public/uploads/organization/image/320/z89.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/350/z89.jpg" afterPath="$PROJECT_DIR$/public/uploads/organization/image/350/z89.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/358/zamboni_revolution.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/358/zamboni_revolution.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/event/image/412/zamboni_revolution.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/image/412/zamboni_revolution.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/316/zamboni_revolution.jpg" afterPath="$PROJECT_DIR$/public/uploads/organization/image/316/zamboni_revolution.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/uploads/organization/image/346/zamboni_revolution.jpg" afterPath="$PROJECT_DIR$/public/uploads/organization/image/346/zamboni_revolution.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/organizations/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/organizations/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/auth_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/auth_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/compas.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/compas.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compasapp.iml" afterPath="$PROJECT_DIR$/.idea/compasapp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/event.rb" afterPath="$PROJECT_DIR$/app/models/event.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/events_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/events_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/events/index.html.erb" afterPath="$PROJECT_DIR$/app/views/events/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/organization.rb" afterPath="$PROJECT_DIR$/app/models/organization.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/organizations_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/organizations_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/events/show.html.erb" afterPath="$PROJECT_DIR$/app/views/events/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/organizations/show.html.erb" afterPath="$PROJECT_DIR$/app/views/organizations/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="compasapp.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1389200364904" ignored="false" />
+    <file path="/Dummy.txt" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1389641617747" ignored="false" />
     <file path="/show.html.erb" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1388942320144" ignored="false" />
-    <file path="/compas.css" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1388941125354" ignored="false" />
+    <file path="/compas.css" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1389242882042" ignored="false" />
     <file path="/compas.js" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1386231017321" ignored="false" />
     <file path="/about.html.erb" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1386213136222" ignored="false" />
-    <file path="/index.html.erb" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1389158380701" ignored="false" />
+    <file path="/index.html.erb" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1389231275184" ignored="false" />
     <file path="/_form.html.erb" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1388347011785" ignored="false" />
-    <file path="/application.html.erb" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1386265980937" ignored="false" />
+    <file path="/application.html.erb" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1389242910026" ignored="false" />
     <file path="/omniauth.rb" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1388265042807" ignored="false" />
     <file path="/Gemfile" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1389156475431" ignored="false" />
     <file path="/organization.rb" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1388941912430" ignored="false" />
     <file path="/organizations_controller.rb" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1388511743032" ignored="false" />
     <file path="/event.rb" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1388592175941" ignored="false" />
     <file path="/user.rb" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1388361734378" ignored="false" />
-    <file path="/events_controller.rb" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1389157861052" ignored="false" />
+    <file path="/events_controller.rb" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1389235682420" ignored="false" />
     <file path="/auth_controller.rb" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1389154400579" ignored="false" />
-    <file path="/application_controller.rb" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1389156676930" ignored="false" />
+    <file path="/application_controller.rb" changelist="565a6289-00e9-4aed-ac03-f3b6b8f8b151" time="1389234465681" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +61,7 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0">
+            <state line="28" column="74" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -250,41 +70,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/events/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="37" selection-end="37" vertical-scroll-proportion="6.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="development.sqlite3" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/development.sqlite3">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="1280" selection-start="3704" selection-end="3705" vertical-scroll-proportion="156.04">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="development.log" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/log/development.log">
-          <provider selected="true" editor-type-id="LargeFileEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0">
+            <state line="5" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -302,7 +88,25 @@
       <file leaf-file-name="events_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/events_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0">
+            <state line="6" column="65" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="compas.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/compas.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="108" selection-start="1955" selection-end="1955" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="50" selection-start="542" selection-end="542" vertical-scroll-proportion="-0.46276596">
               <folding />
             </state>
           </provider>
@@ -311,7 +115,7 @@
       <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
+            <state line="6" column="45" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -335,22 +139,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/initializers/omniauth.rb" />
         <option value="$PROJECT_DIR$/app/views/organizations/_form.html.erb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/controllers/organizations_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/event.rb" />
         <option value="$PROJECT_DIR$/app/views/organizations/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/compas.css" />
         <option value="$PROJECT_DIR$/app/models/organization.rb" />
         <option value="$PROJECT_DIR$/app/views/events/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/auth_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/db/development.sqlite3" />
+        <option value="$PROJECT_DIR$/app/views/events/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/events_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/events/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/compas.css" />
       </list>
     </option>
   </component>
@@ -913,7 +717,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30642503" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3121911" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -989,44 +793,24 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/compas.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="394" column="12" selection-start="9225" selection-end="9226" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/events/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="15" selection-start="1121" selection-end="1121" vertical-scroll-proportion="-17.5">
-          <folding />
-        </state>
+        <state line="28" column="15" selection-start="1121" selection-end="1121" vertical-scroll-proportion="-17.5" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/organizations/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="13" selection-start="1228" selection-end="1228" vertical-scroll-proportion="-6.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="50" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="37" column="13" selection-start="1228" selection-end="1228" vertical-scroll-proportion="-6.25" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/organizations_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="5" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="41" column="5" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/organization.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="38" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="27" column="38" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/auth_controller.rb">
@@ -1036,18 +820,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
@@ -1057,6 +832,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db/development.sqlite3">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="1280" selection-start="3705" selection-end="3705" vertical-scroll-proportion="-7.237477" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/development.log">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/event.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="0" selection-start="760" selection-end="760" vertical-scroll-proportion="0.0">
@@ -1064,37 +849,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/events/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/events_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0">
+        <state line="6" column="65" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="74" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
+        <state line="6" column="45" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/events/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/compas.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="37" selection-end="37" vertical-scroll-proportion="6.25">
+        <state line="66" column="108" selection-start="1955" selection-end="1955" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/development.sqlite3">
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="1280" selection-start="3704" selection-end="3705" vertical-scroll-proportion="156.04">
+        <state line="17" column="50" selection-start="542" selection-end="542" vertical-scroll-proportion="-0.46276596">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/development.log">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state />
       </provider>
     </entry>
   </component>

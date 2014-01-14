@@ -4,15 +4,20 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
+    unless params[:q].blank?
+      @q = Event.search(params[:q])
+      @events = @q.result
 
-
-   if params[:past] == "show"
-     @events = Event.where('date < ?', Date.today).page(params[:page]).per_page(11).order("date DESC")
-   else
-      @events = Event.where('date >= ?', Date.today).page(params[:page]).per_page(11).order(:date)
-      @events = @events.order(sort_column + " " + sort_direction)
-      @events = @events.where(filter_param => filter) if filter
+    else
+     if params[:past] == "show"
+       @events = Event.where('date < ?', Date.today).page(params[:page]).per_page(11).order("date DESC")
+     else
+        @events = Event.where('date >= ?', Date.today).page(params[:page]).per_page(11).order(:date)
+        @events = @events.order(sort_column + " " + sort_direction)
+        @events = @events.where(filter_param => filter) if filter
+     end
    end
+
 
 
 

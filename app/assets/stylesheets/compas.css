@@ -20,6 +20,10 @@ universal
 #anchor { color:#0d95a3; }
 #anchor:hover { background:none; text-decoration: underline; }
 
+header h1 { padding-right:2.7%;margin-top: 7px; margin-bottom:0px;margin-left: -7px;}
+
+header h1 a {font-family: 'BenchNine', sans-serif; font-size:1.65em;}
+
 footer {
     height:30px;
     background-color:#444;
@@ -42,6 +46,30 @@ footer ul li a:hover {background-color:#444; color:#7dbac2;}
 .stickybar {position:fixed; bottom:0;}
 
 footer .social {font-family: 'Mono Social Icons Font';}
+
+/*search ===============================================================================*/
+
+header #q_name_cont {
+    width:95%;
+    float:left;
+    height:32px;
+}
+
+header #event_search {float:left;margin-top: 13px;margin-bottom: 0px;width:53%;}
+
+header .search_button {
+    height:25px;
+    -webkit-appearance:none;
+    border:none;
+    background-color:#fff;
+    font-family:'Open Sans', sans-serif;
+    margin-left: -30px;
+    margin-top:5px;
+    background-image:url('magnifyingglass.png');
+    opacity: .4;
+}
+
+
 
 
 /*========================================================================================

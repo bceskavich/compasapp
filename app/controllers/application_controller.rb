@@ -1,4 +1,10 @@
 class ApplicationController < ActionController::Base
+
+  before_filter :set_search
+  def set_search
+    @q=Event.search(params[:q])
+  end
+
   protect_from_forgery
 
   #before_filter :authenticate, :except => 'login'
