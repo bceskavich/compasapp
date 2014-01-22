@@ -34,6 +34,8 @@ gem 'jquery-rails'
 
 gem 'carrierwave'
 
+gem 'rmagick'
+
 gem 'letsrate'
 
 gem 'will_paginate', '~> 3.0.5'
