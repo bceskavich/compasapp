@@ -60,6 +60,37 @@ class User < ActiveRecord::Base
     Attendance.find_by_attended_event_id(event.id).destroy
   end
 
+  def recommend (user)
+    events = Event.all
+    recs = Hash.new
+    events.each do |event|
+    score = 0;
+      attended = Attendance.where(:attendee_id => user.id)
+      if attended.any?
+        attended.each do |a_event|
+          attended_event = Event.where(:id => a_event.attended_event_id) #COME BACK TO THIS, LOOP
+            attended_event.each do |event_x|
+                if event_x.organization_id == event.organization_id
+                  score = score + 3
+                end
+                if event_x.organization_id == event.organization_id
+                  score =  score + 2
+                end
+            end
+          if a_event.attended_event_id == event.id
+            score = score - (score -1 )
+          end
+        end #attended.each
+      end  #if attended.any?
+      if event.date < Date.today
+        score = -20
+      end
+      recs.store(event, score)
+    end #events.each
+    result = recs.sort_by {|k,v| v}.reverse
+    return result
+  end
+
 
 
 
