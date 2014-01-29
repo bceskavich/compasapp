@@ -1,4 +1,6 @@
 class AttendancesController < ApplicationController
+	before_filter :confirm_logged_in
+	
 	def create
 		current_user = User.find(session[:user_id])
 		@event = Event.find(params[:attendance][:attended_event_id])

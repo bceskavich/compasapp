@@ -1,4 +1,6 @@
 class CommentsController < ApplicationController
+  before_filter :confirm_logged_in
+  
   # GET /comments
   # GET /comments.json
   def index

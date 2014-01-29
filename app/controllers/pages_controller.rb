@@ -1,7 +1,6 @@
 class PagesController < ApplicationController
   include HighVoltage::StaticPage
 
-  #before_filter :authenticate
   layout :layout_for_page
 
   private

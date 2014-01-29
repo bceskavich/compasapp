@@ -1,5 +1,6 @@
 class EventsController < ApplicationController
   helper_method :sort_column, :sort_direction, :filter, :filter_param
+  before_filter :confirm_logged_in
 
   # GET /events
   # GET /events.json
@@ -18,20 +19,12 @@ class EventsController < ApplicationController
      end
    end
 
-
-
-
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @events }
     end
 
-
   end
-
-
-
-  before_filter :confirm_logged_in, :only => [:show, :new, :edit, :create, :update, :destroy, :attendees]
 
   # GET /events/1
   # GET /events/1.json

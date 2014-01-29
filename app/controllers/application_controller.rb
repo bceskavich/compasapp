@@ -24,7 +24,7 @@ class ApplicationController < ActionController::Base
 
   def confirm_logged_in
       unless session[:user_id]
-          flash[:notice] = "Please log in or create an account to view these details!"
+          flash[:notice] = "Compas is currently under development. Check back soon for more details!"
           redirect_to :root
           return false
       else

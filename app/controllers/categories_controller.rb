@@ -1,4 +1,6 @@
 class CategoriesController < ApplicationController
+  before_filter :confirm_logged_in
+  
   # GET /categories
   # GET /categories.json
   def index

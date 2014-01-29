@@ -1,4 +1,6 @@
 class RaterController < ApplicationController 
+
+  before_filter :confirm_logged_in
   
   def create                                  
     if current_user.present?
