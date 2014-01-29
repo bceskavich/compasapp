@@ -5,12 +5,11 @@ gem 'rails', '3.2.14'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-group :development, :test do
+group :development do
 	gem 'sqlite3'
 end
-group :production do
+group :production, :test do
 	gem 'pg'
-	gem 'thin'
 end
 
 gem 'omniauth-facebook'
@@ -46,6 +45,8 @@ gem "arel"
 gem 'acts_as_commentable', '3.0.1'
 
 gem 'ransack'
+
+gem 'rails_12factor', :group => :production
 
 
 # To use ActiveModel has_secure_password
