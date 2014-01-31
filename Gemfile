@@ -10,6 +10,7 @@ group :development do
 end
 group :production, :test do
 	#gem "mysql", "~> 2.9.1"
+	gem 'sqlite3'
 	gem 'passenger'
 end
 
