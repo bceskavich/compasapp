@@ -9,7 +9,7 @@ group :development do
 	gem 'sqlite3'
 end
 group :production, :test do
-	gem "mysql", "~> 2.9.1"
+	#gem "mysql", "~> 2.9.1"
 	gem 'passenger'
 end
 
@@ -26,7 +26,7 @@ group :assets do
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer', :platforms => :ruby
 
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier', '~> 1.0.3'
 end
 
 gem 'jquery-rails'

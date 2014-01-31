@@ -43,6 +43,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
+    daemon_controller (1.1.8)
     erubis (2.7.0)
     execjs (2.0.2)
     faraday (0.8.8)
@@ -65,7 +66,6 @@ GEM
     json (1.8.1)
     jwt (0.1.8)
       multi_json (>= 1.5)
-    kgio (2.8.1)
     letsrate (1.0.8)
     libv8 (3.16.14.3)
     mail (2.5.4)
@@ -88,7 +88,10 @@ GEM
     omniauth-oauth2 (1.1.1)
       oauth2 (~> 0.8.0)
       omniauth (~> 1.0)
-    pg (0.17.0)
+    passenger (4.0.37)
+      daemon_controller (>= 1.1.0)
+      rack
+      rake (>= 0.8.1)
     polyamorous (0.6.4)
       activerecord (>= 3.0)
     polyglot (0.3.3)
@@ -125,7 +128,6 @@ GEM
       rake (>= 0.8.7)
       rdoc (~> 3.4)
       thor (>= 0.14.6, < 2.0)
-    raindrops (0.12.0)
     rake (10.1.0)
     ransack (1.1.0)
       actionpack (>= 3.0)
@@ -154,13 +156,9 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.38)
-    uglifier (2.3.0)
+    uglifier (1.0.4)
       execjs (>= 0.3.0)
-      json (>= 1.8.0)
-    unicorn (4.8.1)
-      kgio (~> 2.6)
-      rack
-      raindrops (~> 0.7)
+      multi_json (>= 1.0.2)
     will_paginate (3.0.5)
 
 PLATFORMS
@@ -176,13 +174,12 @@ DEPENDENCIES
   jquery-rails
   letsrate
   omniauth-facebook
-  pg
+  passenger
   rails (= 3.2.14)
   rails_12factor
   ransack
   sass-rails (~> 3.2.3)
   sqlite3
   therubyracer
-  uglifier (>= 1.0.3)
-  unicorn
+  uglifier (~> 1.0.3)
   will_paginate (~> 3.0.5)
