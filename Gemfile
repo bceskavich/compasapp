@@ -9,11 +9,12 @@ group :development do
 	gem 'sqlite3'
 end
 group :production, :test do
-	gem 'pg'
+	gem "mysql", "~> 2.9.1"
+	gem 'passenger'
 end
 
+# Facebook Integration Gems
 gem 'omniauth-facebook'
-
 gem 'fb_graph'
 
 # Gems used only for assets and not required
@@ -23,7 +24,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
+  gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
 end
@@ -34,18 +35,22 @@ gem 'carrierwave'
 
 # gem 'rmagick'
 
+# Rating System
 gem 'letsrate'
 
+# Pagination
 gem 'will_paginate', '~> 3.0.5'
 
 gem 'high_voltage'
 
 gem "arel"
 
+# Commenting System - currently not used...
 gem 'acts_as_commentable', '3.0.1'
 
 gem 'ransack'
 
+# For Heroku
 gem 'rails_12factor', :group => :production
 
 # To use ActiveModel has_secure_password
