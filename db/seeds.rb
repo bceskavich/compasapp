@@ -256,8 +256,6 @@ if Rails.env.production?
 	e8.image = File.open(IMAGE_FOLDER + '/macklemore.png')
 	e8.save
 
-end
-
 # ----------------------------------------- #
 # Development/Test Organizations and Events #
 # ----------------------------------------- #
