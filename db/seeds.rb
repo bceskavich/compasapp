@@ -150,19 +150,19 @@ if Rails.env.production?
 	o1 = Organization.new(:name => 'University Union', 
 		:description => 'University Union (UU) is the Official Programming Board of Syracuse University. UU is entirely student run and is one of the largest student organizations on the Syracuse campus, in terms of its budget, membership, and the size and frequency of events.', 
 		:user_id => User.find_by_user_name('bceskavich').id)
-	o1.image = File.open(IMAGE_PATH + '/uu_insignia.jpg')
+	o1.image = File.open(IMAGE_FOLDER + '/uu_insignia.jpg')
 	o1.save
 
 	o2 = Organization.new(:name => 'Groovestand', 
 		:description => "GROOVESTAND is a group rooted from the desire & fervid passion to collaborate & express through the creativity of music, while always sharing a message with the world... even if the message is just to have a good time! It was founded in 2000. We are currently 21 members strong, and we represent many different majors! Throughout the year you'll find us singing at charity events and fundraisers, invitationals, A Cappella After Hours in Goldstein Auditorium, and various events across campus.", 
 		:user_id => User.find_by_user_name('jacobjohnson').id)
-	o2.image = File.open(IMAGE_PATH + '/beta/groove.jpg')
+	o2.image = File.open(IMAGE_FOLDER + '/beta/groove.jpg')
 	o2.save
 
 	o3 = Organization.new(:name => 'NAACP', 
 		:description => "The mission of the National Association for the Advancement of Colored People is to ensure the political, educational, social, and economic equality of rights of all persons and to eliminate racial hatred and racial discrimination.", 
 		:user_id => User.find_by_user_name('isabellawilliams').id)
-	o3.image = File.open(IMAGE_PATH + '/beta/naacp.jpg')
+	o3.image = File.open(IMAGE_FOLDER + '/beta/naacp.jpg')
 	o3.save
 
 	o4 = Organization.new(:name => 'Otto Tunes', 
@@ -174,49 +174,49 @@ if Rails.env.production?
 	o5 = Organization.new(:name => 'Turkish Student Association', 
 		:description => 'Making every effort to build a stronger communication among Turkish Students at SU', 
 		:user_id => User.find_by_user_name('williammiller').id)
-	o5.image = File.open(IMAGE_PATH + '/beta/tsa.jpg')
+	o5.image = File.open(IMAGE_FOLDER + '/beta/tsa.jpg')
 	o5.save
 
 	o6 = Organization.new(:name => 'Collegians for a Constructive Tomorrow', 
 		:description => "We are a national non-profit organization that focuses on free-market solutions to energy and environmental issues. We strongly believe that most consumer and environmental problems can best be met and overcome not through excessive government regulation, but rather through the power of the free-enterprise system and ingenuity of science and technology.", 
 		:user_id => User.find_by_user_name('noahwilson').id)
-	o6.image = File.open(IMAGE_PATH + '/beta/cfact.jpg')
+	o6.image = File.open(IMAGE_FOLDER + '/beta/cfact.jpg')
 	o6.save
 
 	o7 = Organization.new(:name => 'College Republicans', 
 		:description => 'We are the College Republicans at Syracuse University.', 
 		:user_id => User.find_by_user_name('danielwhite').id)
-	o7.image = File.open(IMAGE_PATH + '/beta/cr.png')
+	o7.image = File.open(IMAGE_FOLDER + '/beta/cr.png')
 	o7.save
 
 	o8 = Organization.new(:name => 'National Association of Black Journalists SU', 
 		:description => "NABJ SU is a support group for rising journalists, communicators and media enthusiasts at Syracuse University.", 
 		:user_id => User.find_by_user_name('chloethompson').id)
-	o8.image = File.open(IMAGE_PATH + '/beta/nabj.gif')
+	o8.image = File.open(IMAGE_FOLDER + '/beta/nabj.gif')
 	o8.save
 
 	o9 = Organization.new(:name => 'SU Entrepreneurship Club', 
 		:description => "The Entrepreneurship Club is dedicated to helping students foster their ideas, as well as educate them on what it takes to start a business of their own. The Entrepreneurship Club puts a strong emphasis on community and doing whatever it takes to succeed.", 
 		:user_id =>User.find_by_user_name('skeefe').id)
-	o9.image = File.open(IMAGE_PATH + '/beta/e-club.jpg')
+	o9.image = File.open(IMAGE_FOLDER + '/beta/e-club.jpg')
 	o9.save
 
 	o10 = Organization.new(:name => 'Baked Magazine', 
 		:description => "Syracuse University's first student-run food magazine.", 
 		:user_id => User.find_by_user_name('ethanthomas').id)
-	o10.image = File.open(IMAGE_PATH + '/beta/baked.png')
+	o10.image = File.open(IMAGE_FOLDER + '/beta/baked.png')
 	o10.save
 
 	o11 = Organization.new(:name => 'Student Association', 
 		:description => "Student Association is the official student governing body of Syracuse University and SUNY ESF undergraduate students. We serve to represent students in all facets of University life. Through our committees and overall initiatives and goals, Student Association strives to meet its core mission: to represent and be the defender of the students.", 
 		:user_id => User.find_by_user_name('alphabeta').id)
-	o11.image = File.open(IMAGE_PATH + '/beta/sa.jpeg')
+	o11.image = File.open(IMAGE_FOLDER + '/beta/sa.jpeg')
 	o11.save
 
 	o12 = Organization.new(:name => 'SU AIGA', 
 		:description => "Syracuse University's Student Chapter of the American Institute of Graphic Arts, located at The Warehouse. Keep in touch for resources and events!", 
 		:user_id => User.find_by_user_name('lggorman').id)
-	o12.image = File.open(IMAGE_PATH + '/beta/aiga.png')
+	o12.image = File.open(IMAGE_FOLDER + '/beta/aiga.png')
 	o12.save
 
 	o13 = Organization.new(:name => '20 Watts', 
