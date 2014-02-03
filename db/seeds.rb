@@ -46,17 +46,17 @@ u3 = User.new(:user_name => 'tcharles', :first_name => 'Tom', :last_name => 'Cha
 u3.image = File.open(IMAGE_FOLDER + '/m/tcharles.jpg')
 u3.save
 
-u4 = User.new(:user_name => 'alphabeta', :first_name => 'Alpha', :last_name => 'Beta', :password => 'expl0r3', :location => 'Syracuse, NY', :school => 'Syracuse University')
+u4 = User.new(:user_name => 'alphabeta', :first_name => 'Alpha', :last_name => 'Beta', :password => 'Expl0rewithus!', :location => 'Syracuse, NY', :school => 'Syracuse University')
 u4.image = File.open(IMAGE_FOLDER + '/default_user_pic.jpg')
-u4.save
+u4.save!
 
-u5 = User.new(:user_name => 'mprattico', :first_name => 'Marcello', :last_name => 'Prattico', :password => 'expl0r3', :location => 'Syracuse, NY', :school => 'Syracuse University')
+u5 = User.new(:user_name => 'mprattico', :first_name => 'Marcello', :last_name => 'Prattico', :password => 'Expl0rewithus!', :location => 'Syracuse, NY', :school => 'Syracuse University')
 u5.image = File.open(IMAGE_FOLDER + '/beta/mprattico.png')
-u5.save
+u5.save!
 
-u6 = User.new(:user_name => 'skeefe', :first_name => 'Stacey', :last_name => 'Keefe', :password => 'expl0r3', :location => 'Syracuse, NY', :school => 'Syracuse University')
+u6 = User.new(:user_name => 'skeefe', :first_name => 'Stacey', :last_name => 'Keefe', :password => 'Expl0rewithus!', :location => 'Syracuse, NY', :school => 'Syracuse University')
 u6.image = File.open(IMAGE_FOLDER + '/beta/skeefe.jpg')
-u6.save
+u6.save!
 
 #### Fake User Seeds ####
 
@@ -139,12 +139,6 @@ f10.save
 m10 = User.new(:first_name => 'Daniel', :last_name => 'White', :user_name => 'danielwhite', :password => 'SU2orange!', :location => 'Syracuse, NY',  :school => 'Syracuse University')
 m10.image = File.open(IMAGE_FOLDER + '/m/10.jpg')
 m10.save
-
-# ---------------------------------------- #
-# Beta Production Organizations and Events #
-# ---------------------------------------- #
-
-if Rails.env.production?
 
 #### Signed-Up Orgs ####
 o1 = Organization.new(:name => 'University Union', 
