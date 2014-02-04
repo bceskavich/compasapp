@@ -34,7 +34,7 @@ c9 = Category.create(:name => 'Other')
 
 ##### Admin Users and/or Signed-Up Users ####
 
-u1 = User.new(:user_name => 'bceskavich', :first_name => 'Billy', :last_name => 'Ceskavich', :password => 'SU2orange!', :location => 'Syracuse, NY',  :school => 'Syracuse University')
+u1 = User.new(:user_name => 'bceskavich', :first_name => 'Billy', :last_name => 'Ceskavich', :password => 'SU2orange!', :email => 'bceskavich@gmail.com', :location => 'Syracuse, NY',  :school => 'Syracuse University')
 u1.image = File.open(IMAGE_FOLDER + '/m/propic.jpg')
 u1.save
 

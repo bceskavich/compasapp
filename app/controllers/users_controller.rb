@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_filter :confirm_logged_in
+  before_filter :confirm_logged_in, :except => [:new, :create, :show]
   
   # GET /users
   # GET /users.json
@@ -46,7 +46,9 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
+        UserMailer.welcome_email(@user).deliver
+
+        format.html { redirect_to root_url, notice: 'User was successfully created.' }
         format.json { render json: @user, status: :created, location: @user }
       else
         format.html { render action: "new" }

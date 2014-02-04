@@ -13,11 +13,14 @@
 */
 
 /*========================================================================================
-universal
+Universal
 =========================================================================================== */
 
 
-#link:hover {background-color:#fff; text-decoration:underline;}
+#link:hover {
+    background-color: none; 
+    text-decoration: underline;
+}
 
 #anchor { color:#0d95a3; }
 #anchor:hover { background:none; text-decoration: underline; }

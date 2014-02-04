@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to Compas, <%= @user.first_name %></h1>
+    <p>
+      You have successfully signed up to Compas, a budding event management service for college organizations of all sizes. Your username is: <%= @user.user_name %>.<br/>
+    </p>
+    <p>
+      To login to the Compas, just follow this link: <strong><%= @login %></strong>.<br />
+    </p>
+    <p>Compas is just getting started--be sure to stay tuned for more updates as we further refine this service.</p>
+    <p>Thanks for joining us on this journey!<br /></p>
+    <p><em>The Compas Team</em></p>
+  </body>
+</html>

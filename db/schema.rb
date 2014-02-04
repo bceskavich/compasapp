@@ -117,6 +117,7 @@ ActiveRecord::Schema.define(:version => 20131127170535931) do
     t.string   "name"
     t.string   "location"
     t.string   "token"
+    t.string   "email"
   end
 
 end

@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   attr_accessible :first_name, :last_name, :school, :uid, :provider, :name
   attr_accessible :location
   attr_accessible :password, :password_confirmation
+  attr_accessible :email
   attr_accessible :token
 
   attr_accessible :user_name
@@ -25,6 +26,8 @@ class User < ActiveRecord::Base
   end
 
   validates :user_name, :presence => true, :uniqueness => true
+
+  # validates :email, :presence => true
 
   validates :password, :length => { :minimum => 8, :maximum => 32 }, :confirmation => true, if: "provider.nil?"                             # Password Length
   validates :password, :format => { :with => /[a-z]/, :message => "At least one lower case letter mused be used." }, if: "provider.nil?"     # One lower case letter
