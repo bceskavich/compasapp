@@ -21,6 +21,9 @@ class Organization < ActiveRecord::Base
       page = FbGraph::Page.fetch(uri, :access_token => token)
       org_events = page.events({:fields => "name,description,picture,id,location,start_time"})
       org_events.each do |event|
+        options = { :access_token => token }
+        cover_array = Fql.execute('SELECT pic_cover FROM event WHERE eid =' + event.id, options)#CAN"T GET ID
+        cover_url = cover_array[0] #WORK ON THIS UGH
         Event.create!(
             :name => event.name,
             :description => event.description,
@@ -28,7 +31,7 @@ class Organization < ActiveRecord::Base
             :date =>event.start_time ,
             :time => event.start_time,
             :organization_id => self.id,
-            :remote_image_url => event.picture+'?type=large'  #COME BACK TO THIS
+            :remote_image_url => cover_url #COME BACK TO THIS
         )
       end
     end

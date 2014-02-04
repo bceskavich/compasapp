@@ -48,6 +48,8 @@ gem 'acts_as_commentable', '3.0.1'
 
 gem 'ransack'
 
+gem 'fql'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
