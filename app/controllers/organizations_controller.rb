@@ -27,7 +27,7 @@ class OrganizationsController < ApplicationController
   # GET /organizations/new.json
   def new
     @organization = Organization.new
-    @organization.user_id = session[:user_id]
+    # @organization.user_id = session[:user_id]
 
 
     respond_to do |format|

@@ -10,8 +10,13 @@ class Organization < ActiveRecord::Base
   #validates :description, :presence => true
   validates :name, :presence => true
 
+  has_many :owners, :dependent => :destroy
+  has_many :users, :through => :owners
   belongs_to :user
+  
   has_many :events, :dependent => :destroy
+
+  accepts_nested_attributes_for :owners
 
   def create_fb_events
     if self.fb_uri.present?

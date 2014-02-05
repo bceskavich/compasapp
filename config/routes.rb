@@ -27,6 +27,7 @@ Compas::Application.routes.draw do
 
   resources :users
 
+  resources :owners, :only => [:create, :destroy]
 
   resources :attendances, :only => [:create, :destroy]
 

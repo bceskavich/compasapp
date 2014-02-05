@@ -55,8 +55,8 @@
         <%= f.label :organization_id, 'Organization:' %>
       </div>
       <div class="large-10 columns">
-        <% owned_orgs = Organization.where(:user_id => session[:user_id]) %>
-        <% org_options = owned_orgs.map { |o| [o.name, o.id]  } %>
+        <% relationships = Owner.where(:user_id => session[:user_id]) %>
+        <% org_options = relationships.map { |o| [Organization.find(o.organization_id).name, o.organization_id]  } %>
         <%= f.select :organization_id, org_options %>
       </div>
     </div>

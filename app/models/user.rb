@@ -11,6 +11,34 @@ class User < ActiveRecord::Base
 
   letsrate_rater
 
+  #### Associations ####
+  has_many :comments, :dependent => :destroy
+
+
+  has_many :owners, :foreign_key => :user_id, :dependent => :destroy
+  has_many :organizations, :through => :owners
+  
+
+  has_many :events, :dependent => :destroy
+
+  ##### Event Attendance Relationship #####
+  has_many :attendances, :foreign_key => :attendee_id, :dependent => :destroy
+  has_many :attended_events, :through => :attendances, :source => :event
+
+  #### Validations ####
+  validates :user_name, :presence => true, :uniqueness => true
+
+  # validates :email, :presence => true
+
+  validates :password, :length => { :minimum => 8, :maximum => 32 }, :confirmation => true, if: "provider.nil?"                             # Password Length
+  validates :password, :format => { :with => /[a-z]/, :message => "At least one lower case letter mused be used." }, if: "provider.nil?"     # One lower case letter
+  validates :password, :format => { :with => /[A-Z]/, :message => "At least one upper case letter mused be used." }, if: "provider.nil?"     # One upper case letter
+  validates :password, :format => { :with => /[0-9]/, :message => "At least one number mused be used." }, if: "provider.nil?"                # One number
+
+  validates :first_name, :presence => true
+  validates :last_name, :presence => true
+
+  #### Facebook Login ####
   def self.create_with_omniauth(auth)
     create! do |user|
       user.provider = auth["provider"]
@@ -25,25 +53,22 @@ class User < ActiveRecord::Base
     end
   end
 
-  validates :user_name, :presence => true, :uniqueness => true
+  def owns?(org, user)
+    own = Owner.where("organization_id = ? AND user_id = ?", org.id, user.id)
+    if own.empty?
+      false
+    else
+      true
+    end
+  end
 
-  # validates :email, :presence => true
+  def ownership!(org, user)
+    Owner.create!(:organization_id => org.id, :user_id => user.id)
+  end
 
-  validates :password, :length => { :minimum => 8, :maximum => 32 }, :confirmation => true, if: "provider.nil?"                             # Password Length
-  validates :password, :format => { :with => /[a-z]/, :message => "At least one lower case letter mused be used." }, if: "provider.nil?"     # One lower case letter
-  validates :password, :format => { :with => /[A-Z]/, :message => "At least one upper case letter mused be used." }, if: "provider.nil?"     # One upper case letter
-  validates :password, :format => { :with => /[0-9]/, :message => "At least one number mused be used." }, if: "provider.nil?"                # One number
-
-  validates :first_name, :presence => true
-  validates :last_name, :presence => true
-
-  has_many :comments, :dependent => :destroy
-  has_many :organizations, :dependent => :destroy
-  has_many :events, :dependent => :destroy
-
-  ##### Event Attendance Relationship #####
-  has_many :attendances, :foreign_key => :attendee_id, :dependent => :destroy
-  has_many :attended_events, :through => :attendances, :source => :event
+  def unown!(org)
+    Owner.find_by_organization_id(org.id).destroy
+  end
 
   ##### Event Attending Methods #####
   def attending?(event, user)
@@ -63,6 +88,7 @@ class User < ActiveRecord::Base
     Attendance.find_by_attended_event_id(event.id).destroy
   end
 
+  #### User Recommendations #####
   def recommend (user)
     events = Event.all
     recs = Hash.new

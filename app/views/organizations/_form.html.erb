@@ -13,8 +13,11 @@
   <% end %>
 <div class="large-6 columns form_column">
   <div class="row">
-    Admin: <%= @organization.user.first_name + " " + @organization.user.last_name %>
-    <%= f.hidden_field :user_id %>
+    Admin: <%= current_user.first_name + " " + current_user.last_name %>
+    <%= form_for(current_user.owners.build(:organization_id => @organization.id, :user_id => session[:user_id]), :remote => true) do |e| %>
+      <%= e.hidden_field :organization_id %>
+      <%= e.hidden_field :user_id %>
+    <% end %>
   </div>
 
   <div class="row">
