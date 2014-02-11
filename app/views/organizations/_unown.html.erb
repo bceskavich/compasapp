@@ -1,4 +1,4 @@
-<%= form_for(@organization.owners.find_by_user_id(params[:user_id]), url: {:action => :destroy}, :remote => :true) do |f| %>
+<%= form_for(@organization.owners.find_by_user_id(params[:user_id]), html: {:method => :delete}, :remote => :true) do |f| %>
 	<% users = User.all %>
 	<% options = users.map { |u| [u.user_name, u.id] } %>
 
