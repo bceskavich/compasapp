@@ -34,7 +34,6 @@
         <div class="row">
           <% if future_event? %>
             <%= render 'attend_form' if signed_in? %> &nbsp; <a href="<%= attendees_event_path(@event) %>"><strong><span class="count"><%= @event.attendances.count  %></span> attending</strong></a>
-
           <% else %>
             <b>Rate This Event:</b><br />
             <%= rating_for @event, "event" %>
@@ -69,7 +68,7 @@
   </div>
   <p id="notice"><%= notice %></p>
 
-    <%if event_creator? %>
+    <%if event_admin? %>
         <%= link_to 'Edit', edit_event_path(@event) %> |
         <td><%= link_to 'Delete Event', @event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     <%end %>

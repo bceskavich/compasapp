@@ -48,6 +48,7 @@ class OrganizationsController < ApplicationController
     @organization.create_fb_events
     respond_to do |format|
       if @organization.save
+        current_user.ownership!(@organization, current_user)
         format.html { redirect_to @organization, notice: 'Organization was successfully created.' }
         format.json { render json: @organization, status: :created, location: @organization }
       else
@@ -96,9 +97,8 @@ class OrganizationsController < ApplicationController
   end
 
   def org_creator?
-    user = User.find(session[:user_id])
-    org = Organization.find(params[:id])
-    user.id == org.user_id
+    admins = Organization.find(params[:id]).admins
+    admins.include? current_user
   end
 
 end

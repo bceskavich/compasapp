@@ -22,7 +22,11 @@ Compas::Application.routes.draw do
   end
 
 
-  resources :organizations
+  resources :organizations do
+    member do
+      get :owners
+    end
+  end
 
 
   resources :users

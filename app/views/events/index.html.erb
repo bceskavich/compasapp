@@ -1,97 +1,94 @@
 <div id="events_index" class="row">
+  <div class="large-12 columns">
 
-
-
-<div class="large-12 columns">
-
-  <div class="row"><h1>
-    <% if params[:org_id] %>
-      <% org = Organization.find(params[:org_id]) %>
-      Events By <%= org.name %>
-    <% elsif params[:cat_id] %>
-      <% cat = Category.find(params[:cat_id]) %>
-      All <%= cat.name %>s
-    <% elsif params[:past] %>
-        Past Events
-    <% else %>
-      Upcoming Events
-    <% end %>
-  </h1></div>
-  <div class="row">
-    <div class="large-6 large-centered columns sort">
-        <ul id="sort_options">
-            <li><%= sortable "date", "All Upcoming" %></li>
-            <li>
-              <a>Organization</a>
-              <ul>
-                <% orgs = Organization.all %>
-                <% orgs.each do |o| %>
-                <li><%= link_to o.name, { :org_id => o.id } %></li>
-                <% end %>
-              </ul>
-            </li>
-            <li>
-              <a>Category</a>
-              <ul>
-                <% categories = Category.all %>
-                <% categories.each do |cat| %>
-                <li><%= link_to cat.name, { :cat_id => cat.id } %></li>
-                <% end %>
-              </ul>
-            </li>
-            <li><%= link_to "Past Events", { :past => "show" } %></li>
-        </ul>
+    <div class="row"><h1>
+      <% if params[:org_id] %>
+        <% org = Organization.find(params[:org_id]) %>
+        Events By <%= org.name %>
+      <% elsif params[:cat_id] %>
+        <% cat = Category.find(params[:cat_id]) %>
+        All <%= cat.name %>s
+      <% elsif params[:past] %>
+          Past Events
+      <% else %>
+        Upcoming Events
+      <% end %>
+    </h1></div>
+    <div class="row">
+      <div class="large-6 large-centered columns sort">
+          <ul id="sort_options">
+              <li><%= sortable "date", "All Upcoming" %></li>
+              <li>
+                <a>Organization</a>
+                <ul>
+                  <% orgs = Organization.all %>
+                  <% orgs.each do |o| %>
+                  <li><%= link_to o.name, { :org_id => o.id } %></li>
+                  <% end %>
+                </ul>
+              </li>
+              <li>
+                <a>Category</a>
+                <ul>
+                  <% categories = Category.all %>
+                  <% categories.each do |cat| %>
+                  <li><%= link_to cat.name, { :cat_id => cat.id } %></li>
+                  <% end %>
+                </ul>
+              </li>
+              <li><%= link_to "Past Events", { :past => "show" } %></li>
+          </ul>
+      </div>
     </div>
   </div>
-</div>
-  <% if session[:user_id] %>
-    <% if org_owner? %>
-    <div class="large-4 columns event_listing">
-      <div class="row new_block">
-            <%= link_to '+ new', new_event_path %>
+    <% if session[:user_id] %>
+      <% if org_owner? %>
+      <div class="large-4 columns event_listing">
+        <div class="row new_block">
+              <%= link_to '+ new', new_event_path %>
+        </div>
+        <div class="row">
+          <h2>Event Name</h2>
+        </div>
+        <div class="row">
+           Location
+        </div>
+        <div class="row">
+          date -- time
+        </div>
       </div>
-      <div class="row">
-        <h2>Event Name</h2>
-      </div>
-      <div class="row">
-         Location
-      </div>
-      <div class="row">
-        date -- time
-      </div>
-    </div>
+      <% end %>
     <% end %>
+  <div class="row">
+  <% @events.each do |event| %>
+
+      <div class="large-4 columns event_listing">
+        <div class="row event_image">
+        <%= link_to event do %>
+          <div class="overlay"></div>
+          <% if event.image? %>
+            <%= image_tag event.image_url %>
+          <% else  %>
+            <img src="/uploads/noimage.jpg" />
+          <% end %>
+        <%end %>
+         </div>
+        <div class="row">
+          <h2><%= link_to event.name, event, :id => 'link'  %></h2>
+        </div>
+        <div class="row">
+          <%= event.location %>
+        </div>
+        <div class="row">
+          <%= event.time.in_time_zone.strftime("%l:%M%P") %> --  <%= event.date.strftime("%B %e, %Y") %>
+        </div>
+      </div>
+
   <% end %>
-<div class="row">
-<% @events.each do |event| %>
+  </div>
 
-    <div class="large-4 columns event_listing">
-      <div class="row event_image">
-      <%= link_to event do %>
-        <div class="overlay"></div>
-        <% if event.image? %>
-          <%= image_tag event.image_url %>
-        <% else  %>
-          <img src="/uploads/noimage.jpg" />
-        <% end %>
-      <%end %>
-       </div>
-      <div class="row">
-        <h2><%= link_to event.name, event, :id => 'link'  %></h2>
-      </div>
-      <div class="row">
-        <%= event.location %>
-      </div>
-      <div class="row">
-        <%= event.time.in_time_zone.strftime("%l:%M%P") %> --  <%= event.date.strftime("%B %e, %Y") %>
-      </div>
-    </div>
-
-<% end %>
-</div>
-
-<div class="large-12 columns">
-  <!-- will_paginate @events -->
-</div>
+  <div class="large-12 columns">
+    <!-- will_paginate @events -->
+  </div>
 
 </div>

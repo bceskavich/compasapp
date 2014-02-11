@@ -1,6 +1,6 @@
 class Organization < ActiveRecord::Base
   attr_accessible :description, :name, :popularity_index 
-  attr_accessible :user_id
+  # attr_accessible :user_id
   attr_accessible :image
   attr_accessible :twitter_handle
   attr_accessible :fb_uri
@@ -11,12 +11,13 @@ class Organization < ActiveRecord::Base
   validates :name, :presence => true
 
   has_many :owners, :dependent => :destroy
-  has_many :users, :through => :owners
-  belongs_to :user
+  has_many :admins, :through => :owners, :source => :user
+  # belongs_to :user
   
   has_many :events, :dependent => :destroy
 
   accepts_nested_attributes_for :owners
+  attr_accessible :owners_attributes => [:user_id, :id]
 
   def create_fb_events
     if self.fb_uri.present?

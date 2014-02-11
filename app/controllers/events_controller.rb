@@ -105,20 +105,27 @@ class EventsController < ApplicationController
     render 'show_follow'
   end
 
-  before_filter :authorize_event_creator, :only => [:edit, :update, :destroy]
-  helper_method :event_creator?
+  before_filter :authorize_event_admin, :only => [:edit, :update, :destroy]
+  helper_method :event_admin?
 
-  def authorize_event_creator
-    if ! event_creator?
+  def authorize_event_admin
+    if ! event_admin?
       flash[:error] = 'That action is only permitted for the admin of this event.'
       redirect_to :back
     end
   end
 
-  def event_creator?
-    user = User.find(session[:user_id])
+  def event_admin?
     event = Event.find(params[:id])
-    user.id == event.user_id
+    admins = Organization.find(event.organization_id).admins
+
+    if current_user.id == event.user_id
+      true
+    elsif admins.include? current_user
+      true
+    else
+      false
+    end
   end
 
   before_filter :authorize_org_owner, :only => [:create, :new]
@@ -132,8 +139,7 @@ class EventsController < ApplicationController
   end
 
   def org_owner?
-    user = User.find(session[:user_id])
-    orgs = Organization.where(:user_id => user.id)
+    orgs = Owner.where(:user_id => current_user.id)
     if orgs.empty?
       false
     else
@@ -153,7 +159,6 @@ class EventsController < ApplicationController
       false
     end
   end
-
 
   private
 

@@ -1,10 +1,10 @@
 class OwnersController < ApplicationController
 
 	def create
-		current_user = User.find(session[:user_id])
+		@user = User.find(params[:owner][:user_id])
 		@organization = Organization.find(params[:owner][:organization_id])
 
-		current_user.ownership!(@organization, current_user)
+		@user.ownership!(@organization, @user)
 
 		respond_to do |format|
 	      format.html # index.html.erb
@@ -13,10 +13,10 @@ class OwnersController < ApplicationController
 	end
 
 	def destroy
-		current_user = User.find(session[:user_id])
-		@organization = Owner.find(params[:id]).organization
+		@user = User.find(params[:owner][:user_id])
+		@organization = Organization.find(params[:owner][:organization_id])
 
-		current_user.unown!(@organization)
+		@user.unown!(@organization)
 
 		respond_to do |format|
 	      format.html # index.html.erb
