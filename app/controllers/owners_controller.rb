@@ -7,7 +7,7 @@ class OwnersController < ApplicationController
 		@user.ownership!(@organization, @user)
 
 		respond_to do |format|
-	      format.html # index.html.erb
+	      format.html { redirect_to @organization, notice: 'Admin added!'}
 	      format.json { render json: @organization }
 	 	end
 	end

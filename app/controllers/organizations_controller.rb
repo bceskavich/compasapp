@@ -86,6 +86,12 @@ class OrganizationsController < ApplicationController
     end
   end
 
+  def owners
+    @title = "Add an Admin"
+    @organization = Organization.find(params[:id])
+    render 'admin'
+  end
+
   before_filter :authorize_org_creator, :only => [:edit, :update, :destroy]
   helper_method :org_creator?
 
