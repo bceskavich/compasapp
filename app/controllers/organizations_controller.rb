@@ -101,4 +101,10 @@ class OrganizationsController < ApplicationController
     user.id == org.user_id
   end
 
+  def new_facebook
+    @organization = Organization.find(params[:id])
+    @organization.create_fb_events
+
+  end
+
 end
