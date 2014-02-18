@@ -1,7 +1,26 @@
 <div class="row" id="new_event">
-<h1>New event</h1>
 
-<%= render 'form' %>
+  <div class="row">
+    Admin: <%= @event.user.first_name + " " + @event.user.last_name %>
+  </div>
+
+
+<div class="row" id="form_choice">
+  <div class="large-6 columns">
+    <%= link_to events_path, :controller => 'organizations', :action => 'new_facebook', :id => '398' do%>
+        SYNC EVENT DATA FROM FACEBOOK </br>
+    <% end %>
+  </div>
+  <div class="large-6 columns" id='to_form'>
+    <%= link_to('#event_form') do%>
+        CREATE EVENT WITH COMPAS
+    <% end %>
+  </div>
+</div>
+
+<div id="new_event_form">
+  <%= render 'form' %>
+</div>
 
 
 

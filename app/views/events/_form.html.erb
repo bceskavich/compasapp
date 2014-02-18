@@ -1,3 +1,5 @@
+
+
 <div id="event_form" class="row">
 <%= form_for(@event) do |f| %>
   <% if @event.errors.any? %>
@@ -11,27 +13,87 @@
       </ul>
     </div>
   <% end %>
+<div class="panels">
+  <div class="row"id="field" >
+    <%= f.label :name, 'NAME:' %>
+    <%= f.text_field :name, :placeholder => 'event name' %><a>next</a>
+  </div>
+  <div class="row" id="field">
+    <%= f.label :location, 'WHERE:' %>
+    <%= f.text_field :location, :placeholder => 'address' %><a>next</a>
+  </div>
+  <div class="row" id="field">
+    <%= f.label :description, 'WHAT:' %>
+    <%= f.text_area :description, :placeholder => 'description' %><a>next</a>
+  </div>
+  <div class="row datetime" id="field">
+    <div class="large-6 columns">
+      <%= f.label :date, 'WHEN:' %>
+      <%= f.text_field :date, :placeholder => 'date',:id => 'datepicker' %>
+    </div>
+    <div class="large-1 columns">
+      <%= f.label :time, 'TIME:' %>
+    </div>
+    <div class="large-5 columns">
+      <%= f.time_select :time, :ampm => 'true' %>
+    </div>
+    <a>next</a>
+  </div>
+  <div class="row"id="field">
+    <%= f.label :time, 'TICKETS:' %>
+    <%= f.text_field :ticket_info, :placeholder =>'ticket info' %><a>next</a>
+  </div>
+  <div class="row"id="field">
+    <div class="large-2 columns pic_container">
+      <%= image_tag("/assets/default_event.jpg", :class => "user_pic_small") %>
+    </div>
+    <div class="large-9 columns pic_container">
+      <%= f.file_field :image %>
+    </div>
+    <a>next</a>
+  </div>
+</div>
   <div class="large-6 columns form_column">
-    <div class="row">
+    <!--<div class="row">
       Admin: <%= @event.user.first_name + " " + @event.user.last_name %>
       <%= f.hidden_field :user_id %>
+    </div>-->
+    <div class="row">
+      <div class="large-12 columns pic_container">
+        <%= image_tag("/assets/default_event.jpg", :class => "user_pic_small") %>
+      </div>
+      <div class="large-9 columns pic_container">
+        <%= f.file_field :image %>
+      </div>
     </div>
+
+
+  </div>
+  <div class="large-6 columns form_column">
     <div class="row">
       <%= f.text_field :name, :placeholder => 'event name' %>
     </div>
 
     <div class="row">
-        <%= f.text_field :location, :placeholder => 'address' %>
+      <%= f.text_field :location, :placeholder => 'address' %>
     </div>
     <div class="row">
       <%= f.text_field :ticket_info, :placeholder =>'ticket info' %>
     </div>
     <div class="row">
-      <%= f.text_field :description, :placeholder => 'description' %>
+      <%= f.text_area :description, :placeholder => 'description' %>
     </div>
 
-    <div class="row">
-      <%= f.text_field :date, :placeholder => 'date',:id => 'datepicker' %>
+    <div class="row datetime">
+      <div class="large-6 columns">
+        <%= f.text_field :date, :placeholder => 'date',:id => 'datepicker' %>
+      </div>
+      <div class="large-1 columns">
+        <%= f.label :time, 'Time:' %>
+      </div>
+      <div class="large-5 columns">
+        <%= f.time_select :time, :ampm => 'true' %>
+      </div>
     </div>
     <script>
         $(function() {
@@ -39,17 +101,6 @@
             );
         });
     </script>
-    <div class="row">
-      <div class="large-1 columns">
-        <%= f.label :time, 'Time:' %>
-      </div>
-      <div class="large-11 columns">
-        <%= f.time_select :time, :ampm => 'true' %>
-      </div>
-    </div>
-
-  </div>
-  <div class="large-6 columns form_column">
     <div class="row">
       <div class="large-2 columns">
         <%= f.label :organization_id, 'Organization:' %>
@@ -72,15 +123,6 @@
     </div>
 
 
-      <div class="row">
-        <div class="large-3 columns pic_container">
-          <%= f.label :image, 'Upload Image' %>
-          <%= image_tag("/assets/default_event.jpg", :class => "user_pic_small") %>
-         </div>
-        <div class="large-9 columns pic_container">
-            <%= f.file_field :image %>
-        </div>
-      </div>
     <div class="row">
       <% url = request.fullpath %>
       <% url_check = url.scan('new') %>
@@ -93,3 +135,4 @@
   <% end %>
   </div>
 </div>
+
