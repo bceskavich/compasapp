@@ -87,9 +87,24 @@ class OrganizationsController < ApplicationController
   end
 
   def owners
-    @title = "Add an Admin"
+    @title = "Admins"
     @organization = Organization.find(params[:id])
+    @admins = @organization.admins
     render 'admin'
+  end
+
+  def remove_admins
+    @title = 'Remove Admins'
+    @organization = Organization.find(params[:id])
+    @org = @organization
+    @owners = @org.owners
+    render 'remove_admin'
+  end
+
+  def add_admins
+    @title = 'Add Admins'
+    @organization = Organization.find(params[:id])
+    render 'add_admin'
   end
 
   before_filter :authorize_org_creator, :only => [:edit, :update, :destroy]

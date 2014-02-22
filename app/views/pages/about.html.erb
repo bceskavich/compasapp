@@ -1,33 +1,74 @@
+<% if session[:user_id] %>
+  <section class="row" id="beta">
+    <div class="row">
+      <!-- Feedback Form -->
+      <article class="large-4 columns side">
+        <h1>Submit Feedback Today!</h1>
+        <p><a href="mailto:compasapp@gmail.com?subject=Beta Feedback">Tell us what you think</a>, we're eager to hear!</p>
+      </article>
 
-<div class="row" id="about">
-  <div class="large-12 columns"><h1>About</h1></div>
-  <div class="large-12 columns intro">
-    <p>
-      There’s a lot of noise at Syracuse University. On a campus this large, it’s hard to stay on top of everything going on. Compas is here to point you in the right direction. As the university’s most thorough event repository, we make it easy to track all the various going-ons. From sports and concerts to lectures and info sessions, you’ll never miss another interesting event with Compas!
-    </p>
-  </div>
-  <div class="row">
-    <div class="large-4 columns about">
-      <div class="image"><%= image_tag('/assets/jj.jpg')%></div>
-      <h2>Connect.</h2>
+      <!-- Main Beta Intro -->
+      <article class="large-8 columns main">
+        <div class="intro">
+          <h1>Welcome to Compas</h1>
+          <p>We’re glad to have you on board! With Compas we’re creating a tool to help student organizations better organize and market their events. Compas is currently in a private beta for Syracuse students. Welcome to the beginning of something great.</p>
+          <p>We’re sure you will encounter some weird flaws along the way, and you might even have some suggestions on how we can do better. There, we encourage you to submit feedback as often as possible!</p>
+        </div>
+        <div class="info">
+          <h2>So, what can I do with Compas?</h2>
+          <p>Compas is a repository for all student events. You can create events for your organization, pull info from your Facebook account, and even control who is an admin for your organization. See below for some examples:</p>
+        </div>
+        <div class="info">
+          <h2>Getting Started</h2>
+          <p>We’ve already set you up with all that you need to get started. Below, you can find your login credentials as well as a link to your organization’s page.</p>
+          <p>
+            <strong>Username:</strong> <%= link_to current_user.user_name, current_user %><br />
+            <strong>Password:</strong> <%= current_user.password %><br />
+            <% org = current_user.organizations.first %>
+            <strong>Organization:</strong> <%= link_to org.name, org %>
+          </p>
+          <p><em>We strongly encourage you to change your password today!</em></p>
+          <p>Next, feel free to edit your organization’s info, start hosting events, and share with other Compas users!</p>
+        </div>
+      </article>
+    </div>
+  </section>
+<% else %>
+  <section class="row" id="about">
+    <div class="large-12 columns"><h1>About</h1></div>
+    <div class="large-12 columns intro">
       <p>
-        Follow your favorite organizations. Search by event type. See what’s popular. We offer a variety of ways to sort through the clutter, making sure you find exactly what you’re looking for.
+        There’s a lot of noise at Syracuse University. On a campus this large, it’s hard to stay on top of everything going on. Compas is here to point you in the right direction. 
+      </p>
+      <p>
+        Compas is currently in a private beta. We're working a select group of enthusiastic Syracuse students to gain feedback on an early version of our product. Stay tuned for more updates soon!
+      </p>
+      <p>
+        And, if you're a beta user, feel free to <%= link_to 'sign in here', :controller => 'auth', :action => 'login', :id => 'link' %>.
       </p>
     </div>
-    <div class="large-4 columns about">
-      <div class="image"><%= image_tag('/assets/pauly.jpg')%></div>
-      <h2>Publicize.</h2>
-      <p>
-        Having trouble spreading the word about your upcoming launch party? Worried your efforts will go in vein? Don’t fret! Compas gives equal footing to organizations of all sorts and sizes, helping you reach a much wider audience than a few flyers in HBC will ever do.
-      </p>
+    <div class="row">
+      <div class="large-4 columns about">
+        <div class="image"><%= image_tag('/assets/jj.jpg')%></div>
+        <h2>Connect.</h2>
+        <p>
+          Follow your favorite organizations. Search by event type. See what’s popular. We offer a variety of ways to sort through the clutter, making sure you find exactly what you’re looking for.
+        </p>
+      </div>
+      <div class="large-4 columns about">
+        <div class="image"><%= image_tag('/assets/pauly.jpg')%></div>
+        <h2>Publicize.</h2>
+        <p>
+          Having trouble spreading the word about your upcoming launch party? Worried your efforts will go in vein? Don’t fret! Compas gives equal footing to organizations of all sorts and sizes, helping you reach a much wider audience than a few flyers in HBC will ever do.
+        </p>
+      </div>
+      <div class="large-4 columns about">
+        <div class="image"><%= image_tag('/assets/quad.jpg')%></div>
+        <h2>Socialize.</h2>
+        <p>
+          Half the fun of attending an event is talking about it. You hype it to your friends beforehand and break it down afterwards. We serve as a forum for community engagement right within the event page. Share tips, make predictions, talk shit, have fun!
+        </p>
+      </div>
     </div>
-    <div class="large-4 columns about">
-      <div class="image"><%= image_tag('/assets/quad.jpg')%></div>
-      <h2>Socialize.</h2>
-      <p>
-        Half the fun of attending an event is talking about it. You hype it to your friends beforehand and break it down afterwards. We serve as a forum for community engagement right within the event page. Share tips, make predictions, talk shit, have fun!
-      </p>
-    </div>
-  </div>
-
-</div>
+  </section>
+<% end %>

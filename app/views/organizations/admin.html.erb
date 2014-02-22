@@ -1,10 +1,16 @@
 <div class="row" id="edit_org">
-  <h1>Editing organization admins</h1>
-
-  <div class="row">
-    <%= render 'own_form' %>
-  </div>
-
+  <h1><%= @title %></h1>
+  <%= link_to 'Add Amins', add_admins_organization_path(@organization) %> | <%= link_to 'Remove Admins', remove_admins_organization_path(@organization) %>
+</div>
+<div class="row">
+    <% @admins.each do |a| %>
+      <div class="large-2 columns">
+        <div><%= image_tag(a.image) %></div>
+        <div class="name"><%= link_to a.first_name + ' ' + a.last_name, a, :id => 'link' %></div>
+      </div>
+    <% end %>
+</div>
+<div class="row">
   <%= link_to 'Show', @organization %> |
   <%= link_to 'Back', organizations_path %>
 </div>

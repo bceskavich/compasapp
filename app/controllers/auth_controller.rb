@@ -10,7 +10,7 @@ class AuthController < ApplicationController
             org.create_fb_events
           end
         end
-  			redirect_to :controller => 'events', :action => 'index'
+  			redirect_to root_url
   		else
   			flash[:error] = "Invalid username/password!"
   			redirect_to :back

@@ -1,5 +1,5 @@
-<%= form_for(@organization.owners.find_by_user_id(params[:user_id]), html: {:method => :delete}, :remote => :true) do |f| %>
-	<% users = @organization.admins %>
+<%= form_for(@org.owners.find_by_user_id(params[:user_id]), html: {:method => :delete}, :remote => :true) do |f| %>
+	<% users = @org.owners %>
 	<% options = users.map { |u| [u.user_name, u.id] } %>
 
 	<div><%= f.select(:user_id, options) %></div>

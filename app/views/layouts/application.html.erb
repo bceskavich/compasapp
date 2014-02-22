@@ -22,7 +22,7 @@
     <div class="pull-0.5 large-12 columns">
       <div >
         <%= link_to image_tag("compass.png", :alt => "logo"), root_url %>
-        <h1><%= link_to "COMPAS", root_url %></h1>
+        <h1><%= link_to "COMPAS(beta)", root_url %></h1>
       </div>
 
       <%= search_form_for @q do |f| %>
@@ -32,8 +32,13 @@
 
       <nav>
         <ul>
-          <li><%=link_to 'about', page_path('about'), :class=> 'header_link'%></li>
-          <li>\\</li>
+          <% if session[:user_id] %>
+            <li><%= link_to 'BETA INFO', page_path('about'), :class => 'header_link' %></li>
+            <li>\\</li>
+          <% else %>
+            <li><%=link_to 'about', page_path('about'), :class=> 'header_link'%></li>
+            <li>\\</li>
+          <% end %>
           <li><%=link_to 'events', events_path, :class=> 'header_link' %></li>
           <li>\\</li>
           <li><%=link_to 'organizations', organizations_path, :class=> 'header_link' %></li>

@@ -25,6 +25,8 @@ Compas::Application.routes.draw do
   resources :organizations do
     member do
       get :owners
+      get :add_admins
+      get :remove_admins
     end
   end
 
