@@ -96,8 +96,6 @@ class OrganizationsController < ApplicationController
   def remove_admins
     @title = 'Remove Admins'
     @organization = Organization.find(params[:id])
-    @org = @organization
-    @owners = @org.owners
     render 'remove_admin'
   end
 

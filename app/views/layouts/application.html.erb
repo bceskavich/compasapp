@@ -18,42 +18,63 @@
 
 
 <header>
-  <div class="row">
-    <div class="pull-0.5 large-12 columns">
-      <div >
-        <%= link_to image_tag("compass.png", :alt => "logo"), root_url %>
-        <h1><%= link_to "COMPAS(beta)", root_url %></h1>
-      </div>
 
-      <%= search_form_for @q do |f| %>
-          <%= f.text_field :name_cont, :placeholder => 'search for campus events...'  %>
-          <%= f.submit '    ',:class => 'search_button'%>
-      <% end %>
+  <% if session[:user_id] %>
+    <div class="row">
+      <div class="pull-0.5 large-12 columns">
+        <div >
+          <%= link_to image_tag("compass.png", :alt => "logo"), root_url %>
+          <h1><%= link_to "COMPAS(beta)", root_url %></h1>
+        </div>
 
-      <nav>
-        <ul>
-          <% if session[:user_id] %>
+        <%= search_form_for @q do |f| %>
+            <%= f.text_field :name_cont, :placeholder => 'search for campus events...'  %>
+            <%= f.submit '    ',:class => 'search_button'%>
+        <% end %>
+
+        <nav>
+          <ul>
             <li><%= link_to 'BETA INFO', page_path('about'), :class => 'header_link' %></li>
             <li>\\</li>
-          <% else %>
+            <li><%=link_to 'events', events_path, :class=> 'header_link' %></li>
+            <li>\\</li>
+            <li><%=link_to 'organizations', organizations_path, :class=> 'header_link' %></li>
+            <li>\\</li>
+            <% if session[:user_id] %>
+                <% user = User.find(session[:user_id]) %>
+                <li><%= link_to user.first_name, user, :class=>'header_link' %></li> <li>-</li>
+                <li><%= link_to 'logout', :controller => 'auth', :action => 'logout',:class=> 'header_link'  %></li>
+            <% else %>
+                <li><%= link_to 'login', :controller => 'auth', :action => 'login',:class=> 'header_link'  %></li>
+            <% end %>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  <% else %>
+    <!-- Non Beta User Nav -->
+    <div class="row">
+      <div class="pull-0.5 large-12 columns">
+        <div >
+          <%= link_to image_tag("compass.png", :alt => "logo"), root_url %>
+          <h1><%= link_to "COMPAS(beta)", root_url %></h1>
+        </div>
+        <nav>
+          <ul>
             <li><%=link_to 'about', page_path('about'), :class=> 'header_link'%></li>
             <li>\\</li>
-          <% end %>
-          <li><%=link_to 'events', events_path, :class=> 'header_link' %></li>
-          <li>\\</li>
-          <li><%=link_to 'organizations', organizations_path, :class=> 'header_link' %></li>
-          <li>\\</li>
-          <% if session[:user_id] %>
-              <% user = User.find(session[:user_id]) %>
-              <li><%= link_to user.first_name, user, :class=>'header_link' %></li> <li>-</li>
-              <li><%= link_to 'logout', :controller => 'auth', :action => 'logout',:class=> 'header_link'  %></li>
-          <% else %>
-              <li><%= link_to 'login', :controller => 'auth', :action => 'login',:class=> 'header_link'  %></li>
-          <% end %>
-        </ul>
-      </nav>
+            <% if session[:user_id] %>
+                <% user = User.find(session[:user_id]) %>
+                <li><%= link_to user.first_name, user, :class=>'header_link' %></li> <li>-</li>
+                <li><%= link_to 'logout', :controller => 'auth', :action => 'logout',:class=> 'header_link'  %></li>
+            <% else %>
+                <li><%= link_to 'login', :controller => 'auth', :action => 'login',:class=> 'header_link'  %></li>
+            <% end %>
+          </ul>
+        </nav>
+      </div>
     </div>
-  </div>
+  <% end %>
 
 </header>
 

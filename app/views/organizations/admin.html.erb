@@ -1,6 +1,7 @@
 <div class="row" id="edit_org">
   <h1><%= @title %></h1>
-  <%= link_to 'Add Amins', add_admins_organization_path(@organization) %> | <%= link_to 'Remove Admins', remove_admins_organization_path(@organization) %>
+  <%= link_to 'Remove Admins', remove_admins_organization_path(@organization) %>
+  <%= link_to 'Add Amins', add_admins_organization_path(@organization) %>
 </div>
 <div class="row">
     <% @admins.each do |a| %>

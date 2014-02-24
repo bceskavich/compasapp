@@ -1,8 +1,8 @@
-<%= form_for(@org.owners.find_by_user_id(params[:user_id]), html: {:method => :delete}, :remote => :true) do |f| %>
-	<% users = @org.owners %>
+<% organization = Organization.find(params[:id]) %>
+<%= form_for(organization.owners.find_by_user_id(params[:user_id]), html: {:method => :delete}, :remote => :true) do |f| %>
+	<% users = User.all %>
 	<% options = users.map { |u| [u.user_name, u.id] } %>
 
 	<div><%= f.select(:user_id, options) %></div>
-	<div><%= f.hidden_field :organization_id %></div>
-  	<%= f.submit "Remove admin" %>
+	<p><%= f.submit "Add Admin!" %></p>
 <% end %>

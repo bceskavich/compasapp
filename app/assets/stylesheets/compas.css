@@ -584,15 +584,6 @@ about
     text-decoration: underline;
 }
 
-#beta .side {
-    position: fixed;
-    z-index: 0;
-}
-
-#beta .main {
-    z-index: 1;
-}
-
 
 /*========================================================================================
 attendees page
